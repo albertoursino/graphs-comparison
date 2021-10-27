@@ -1,12 +1,10 @@
-# Learning-from-Network-Project
-
 # Comparison between “sister cities” and “air routes” graphs
 
-# Motivation
+## Motivation
 
-# Method
+## Method
 
-# Intended Experiments
+## Intended Experiments
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjcyODA5OV19
+eyJoaXN0b3J5IjpbMzUyNTUzMzMxXX0=
 -->

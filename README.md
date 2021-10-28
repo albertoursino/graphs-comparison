@@ -22,8 +22,9 @@ From the comparison of the features computed on both these two graphs, the aim i
 
 ## Intended experiments
 
-From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discosimilarities.
-Below we will present some of them and their objectives:
+From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
+
+Below we will present some important experiments we decided to do, and their goals:
 
 - *Clustering*: the goal of this experiment is to define/calculate clusters on both graphs and compare them in order to find some similar clusters.
 - *Centralities of cities*: the goal is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
@@ -35,6 +36,6 @@ We have to say that these points may change during the project development: some
 
 To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTQ4MDIwOCwtMjExOTg1MjMzNSwxMj
-U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
+eyJoaXN0b3J5IjpbNTAzNjUxNzU4LC0yMTE5ODUyMzM1LDEyNT
+U5MjA2NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
 -->

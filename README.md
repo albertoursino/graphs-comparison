@@ -26,15 +26,15 @@ From the previous sections you may have understood this is an **application proj
 
 Below we will present some important experiments we have decided to do, and their goals:
 
-- *Clustering*: compute clusters on both graphs and compare them in order to find some similar clusters.
-- *Centralities of cities*: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
-- *Graphs feature*: extract the graphs feature and compare them with the intention of looking at the differences and maybe extract some interesting results.
-- *Distances between nodes*: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
+- **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
+- **Centralities of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
+- **Graphs feature**: extract the graphs feature and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- **Distances between cities**: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - [*in progress...*]
 
 To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTAwMTMwNzksNTM2Njc5NzQ5LC04MD
-k0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMjA4NTA4
-MDEwMywzNTI1NTMzMzFdfQ==
+eyJoaXN0b3J5IjpbLTE5Njk2NDY0MTMsLTExNTAwMTMwNzksNT
+M2Njc5NzQ5LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTky
+MDY3MiwtMjA4NTA4MDEwMywzNTI1NTMzMzFdfQ==
 -->

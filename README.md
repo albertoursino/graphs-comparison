@@ -1,5 +1,5 @@
 
-# Comparison between the graph "sister cities" and "airline routes"
+# Comparison between the graphs "sister cities" and "airline routes"
 
 This is the presentation paper of a *Learning From Network* course's project.
 In the following sections we will present the project idea, the results we are hoping to obtain and finally the material we currently have and some details of our way to procede.
@@ -35,5 +35,6 @@ Below I will present some of them and their objectives:
 I have to say that these points can change during the project development: some of them can be crucial in order to obtain interesenting results, some of them instead can be useless and so to leave out. 
 In order to approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of making our life easier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
+eyJoaXN0b3J5IjpbMTI1NTkyMDY3MiwtMjA4NTA4MDEwMywzNT
+I1NTMzMzFdfQ==
 -->

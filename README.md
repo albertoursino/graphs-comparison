@@ -32,10 +32,10 @@ Below we will present some important experiments we decided to do, and their goa
 - *Distances between nodes*: calculate some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - [*in progress...*]
 
-We have to say that these points may change during the project development.
+We have to say that these ideas of experiments may change during the project development and we also can intraprend new
 
 To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDY1NTUyMSwtMjExOTg1MjMzNSwxMj
+eyJoaXN0b3J5IjpbLTY0MTgyMTUwNCwtMjExOTg1MjMzNSwxMj
 U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
 -->

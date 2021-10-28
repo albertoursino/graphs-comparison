@@ -27,7 +27,7 @@ We are going to do some experiments on the two graphs we have presented above in
 Below we will present some of them and their objectives:
 
 - *Clustering*: the goal of this experiment is to define/calculate clusters on both graphs and compare them in order to find some similar clusters.
-- *Centralities of cities*: the goal is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding a sort of similarity.
+- *Centralities of cities*: the goal is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
 - *Graphs feature*: the goal here is to calculate the feature of the graphs and compare them in order to observe the differences and maybe extract some interesting results.
 - *Distances between nodes*: the goal is to do some experiments on the graphs paths. For example, calculate the shortest path from two cities in both graphs and try to find interesting comparing results. 
 - [*in progress...*]

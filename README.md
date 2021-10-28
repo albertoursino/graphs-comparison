@@ -22,7 +22,7 @@ From the comparison of the features computed on both these two graphs, the aim i
 
 ## Intended experiments
 
-From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming on the comparision.
+From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discosimilarities.
 Below we will present some of them and their objectives:
 
 - *Clustering*: the goal of this experiment is to define/calculate clusters on both graphs and compare them in order to find some similar clusters.
@@ -35,6 +35,6 @@ We have to say that these points may change during the project development: some
 
 To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjQ2MDY5NiwtMjExOTg1MjMzNSwxMj
+eyJoaXN0b3J5IjpbLTMxMTQ4MDIwOCwtMjExOTg1MjMzNSwxMj
 U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
 -->

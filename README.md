@@ -27,14 +27,14 @@ We are going to do some experiments on the two graphs we have presented above in
 Below we will present some of them and their objectives:
 
 - *Clustering*: the goal of this experiment is to define/calculate clusters on both graphs and compare them in order to find some similar clusters.
-- *Centralities of cities*: the goal is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of find a sort of similarity.
+- *Centralities of cities*: the goal is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding a sort of similarity.
 - *Graphs feature*: the goal here is to calculate the feature of the graphs and compare them in order to observe the differences and maybe extract some interesting results.
 - *Distances between nodes*: the goal is to do some experiments on the graphs paths. For example, calculate the shortest path from two cities in both graphs and try to find interesting comparing results. 
 - [*in progress...*]
 
 We have to say that these points may change during the project development: some of them could be crucial in order to obtain interesenting results, some of them, instead, could be useless and to be left out. 
 
-To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitate the development of the project.
+To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
 A4NTA4MDEwMywzNTI1NTMzMzFdfQ==

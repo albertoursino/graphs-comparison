@@ -26,16 +26,16 @@ From the previous sections you may have understood this is an **application proj
 
 Below we will present some important experiments we decided to do, and their goals:
 
-- *Clustering*: this experiment aims to define/calculate clusters on both graphs and compare them in order to find some similar clusters.
+- *Clustering*: define/calculate clusters on both graphs and compare them in order to find some similar clusters.
 - *Centralities of cities*: the goal here is to calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
-- *Graphs feature*: we want to extract the graphs feature and compare them with the intention of differences and maybe extract some interesting results.
-- *Distances between nodes*: the goal is to do some experiments on the graphs paths. For example, calculate the shortest path from two cities in both graphs and try to find interesting comparing results. 
+- *Graphs feature*: we want to extract the graphs feature and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- *Distances between nodes*:  the graphs paths. For example, calculate the shortest path from two cities in both graphs and try to find interesting comparing results. 
 - [*in progress...*]
 
 We have to say that these points may change during the project development: some of them could be crucial in order to obtain interesenting results, some of them, instead, could be useless and to be left out. 
 
 To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzA3NDg5NzcsLTIxMTk4NTIzMzUsMT
-I1NTkyMDY3MiwtMjA4NTA4MDEwMywzNTI1NTMzMzFdfQ==
+eyJoaXN0b3J5IjpbMjY0MzQzMzA5LC0yMTE5ODUyMzM1LDEyNT
+U5MjA2NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
 -->

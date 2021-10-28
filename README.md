@@ -34,8 +34,8 @@ Below we will present some of them and their objectives:
 
 We have to say that these points may change during the project development: some of them could be crucial in order to obtain interesenting results, some of them, instead, could be useless and to be left out. 
 
-In order to approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of making our life easier.
+To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of making our life easier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTEzNzAyMywxMjU1OTIwNjcyLC0yMD
+eyJoaXN0b3J5IjpbLTg3MDYwMzMzNCwxMjU1OTIwNjcyLC0yMD
 g1MDgwMTAzLDM1MjU1MzMzMV19
 -->

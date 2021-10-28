@@ -33,8 +33,9 @@ Below I will present some of them and their objectives:
 - [*in progress...*]
 
 I have to say that these points can change during the project development: some of them can be crucial in order to obtain interesenting results, some of them instead can be useless and so to leave out. 
+
 In order to approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of making our life easier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyNjUwMTYwLDEyNTU5MjA2NzIsLTIwOD
-UwODAxMDMsMzUyNTUzMzMxXX0=
+eyJoaXN0b3J5IjpbLTM0NzExNzU2NiwxMjU1OTIwNjcyLC0yMD
+g1MDgwMTAzLDM1MjU1MzMzMV19
 -->

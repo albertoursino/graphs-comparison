@@ -37,9 +37,9 @@ In general, we will try to use exact algorithms; if, however, the graph is too l
 
 For the clustering experiment there are at least two approaches; for example "graph embeddings" or specific cluster algorithms for graphs. 
 
-There are certainly other algorithms that we can come up with but we are going 
+There are certainly other algorithms that we can come up with but we are going to learn them later during the course.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzA0NzE0LDE3NDI1NjczOTMsMTU1Nj
+eyJoaXN0b3J5IjpbNzUwMjQyNDQ2LDE3NDI1NjczOTMsMTU1Nj
 czNjQ2OCwxODA4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3
 OSw1MzY2Nzk3NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMj
 U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19

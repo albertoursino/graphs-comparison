@@ -18,7 +18,7 @@ The purpose of the project is to analyze **two graphs**:
 
 ## Intended experiments
 
-From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
+As you may have understood, this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
 
 **Experiments** we have decided to do, and their goals:
 - ***Centralities of cities***: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
@@ -36,7 +36,7 @@ In general, we will try to use exact algorithms; if, however, the graph is too l
 
 For the clustering experiment there are at least two approaches; for example "graph embeddings" or specific cluster algorithms for graphs. We haven't covered them yet [TO DO]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMDQyMTU1LDE1NTY3MzY0NjgsMTgwOD
+eyJoaXN0b3J5IjpbNTAzMDgxNjk3LDE1NTY3MzY0NjgsMTgwOD
 Q0NDEwNSwyNjgxMzM4NzUsLTExNTAwMTMwNzksNTM2Njc5NzQ5
 LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
 A4NTA4MDEwMywzNTI1NTMzMzFdfQ==

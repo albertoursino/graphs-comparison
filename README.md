@@ -33,10 +33,10 @@ From the previous sections you may have understood this is an **application proj
 ## Algorithms
 
 In general, we will try to use exact algorithms; if, however, the graph is too large or the computation requires too much time, we will try approximate algorithms, such as ***Eppstein-Wang*** or ***Chechik-Cohen***. 
-For the clustering experiment there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
+For the clustering experiment there are at least two approaches; for example graph embeddings or cluster algorithms specific for graphs. We haven't covered them yet [TO DO]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE4OTI1NDIsMTU1NjczNjQ2OCwxOD
-A4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3
-NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC
-0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
+eyJoaXN0b3J5IjpbMTUwODM4OTQwOSwxNTU2NzM2NDY4LDE4MD
+g0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNjY3OTc0
+OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2NzIsLT
+IwODUwODAxMDMsMzUyNTUzMzMxXX0=
 -->

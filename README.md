@@ -25,7 +25,6 @@ The purpose of the project is to analyze **two graphs**:
 From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
 
 **Experiments** we have decided to do, and their goals:
-
 - ***Centralities of cities***: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
 - ***Graphs feature vector***: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
 - ***Distances between cities***: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
@@ -33,9 +32,9 @@ From the previous sections you may have understood this is an **application proj
 - [*in progress...*]
 
 **Libraries**: networkx, pandas, numpy, [...]
-**Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, 
+**Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the IntelliJ environment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTM0OTg5OSwxODA4NDQ0MTA1LDI2OD
+eyJoaXN0b3J5IjpbLTE5MDI1Mjc1MywxODA4NDQ0MTA1LDI2OD
 EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
 MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
 M1MjU1MzMzMV19

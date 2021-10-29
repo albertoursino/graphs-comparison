@@ -32,7 +32,7 @@ Below we will present some important experiments we have decided to do, and thei
 - **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*in progress...*]
 
-To approach all these experiments with the right tools, we will use our knowledge acquired by the *Learning From Network* course itself and obviously we will probably use some sort of pre-implemented libraries for the purpose of facilitating the development of the project.
+### Libraries: networkx, pandas, numpy, [...]
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNj
 Y3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2

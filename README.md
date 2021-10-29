@@ -22,7 +22,8 @@ We would like to compute:
 1. Betweeness centralities and closeness centralities for each node of both networks
 2. Compute clusters in order to identify communities, for example, see whether European cities are more likely to establish a "sister city" bond within Europe, as well as for other countries like U.S. between American cities
 3. Compute some graph-level features, for instance [TO DO]
-- **Algorithms**: for 1) we will try to use exact algorithms; if, however, the graph is too large or the computation requires time, we will try approximate algorithms, such as Eppstein-Wang or Chechik-Cohen. For 2) there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
+### Algorithms
+For 1) we will try to use exact algorithms; if, however, the graph is too large or the computation requires time, we will try approximate algorithms, such as Eppstein-Wang or Chechik-Cohen. For 2) there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
 
 ## Intended experiments
 
@@ -38,7 +39,7 @@ From the previous sections you may have understood this is an **application proj
 **Libraries**: NetworkX, Pandas, Numpy, Matplotlib, [...]
 **Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODcwMjE1NCwxODA4NDQ0MTA1LDI2OD
+eyJoaXN0b3J5IjpbMTU1NjczNjQ2OCwxODA4NDQ0MTA1LDI2OD
 EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
 MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
 M1MjU1MzMzMV19

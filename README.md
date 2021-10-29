@@ -15,13 +15,10 @@ The purpose of the project is to analyze **two graphs**:
     
 2.  The second graph depicts a global mapping of all the **airline routes** connecting different cities, weighted with the amount of flights during a certain time lapse. We will probably use the [Tyler Woebkenberg's dataset](https://data.world/tylerudite/airports-airlines-and-routes).
     
-
-From the comparison of the features computed on both these two graphs, the aim is to observe if there is any similarity between them.
-
 ## Method
 
-- **Problems**:
-- **Algorithms**:
+- **Problems**: we would like to compute 1) betweeness centralities and closeness centralities for each node of both networks, 2) compute clusters in order to identify communities, for example, see whether European cities are more likely to establish a "sister city" bond within Europe, as well as for other countries like U.S. between American cities. 
+- **Algorithms**: for 1) we will try to use exact algorithms; if, however, the graph is too large or the computation requires time, we will try approximate algorithms, such as Eppstein-Wang or Chechik-Cohen. For 2) there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
 
 ## Intended experiments
 
@@ -30,7 +27,7 @@ From the previous sections you may have understood this is an **application proj
 Below we will present some important experiments we have decided to do, and their goals:
 
 - **Centralities of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
-- **Graphs feature**: extract the graphs feature and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- **Graphs features**: extract the graphs features and compare them with the intention of looking at the differences and maybe extract some interesting results.
 - **Distances between cities**: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*in progress...*]

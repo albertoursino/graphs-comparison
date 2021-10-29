@@ -33,6 +33,7 @@ Below we will present some important experiments we have decided to do, and thei
 - [*in progress...*]
 
 ### Libraries: networkx, pandas, numpy, [...]
+### Machine for experiments: 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNj
 Y3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2

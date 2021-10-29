@@ -27,7 +27,8 @@ From the previous sections you may have understood this is an **application proj
 Below we will present some important experiments we have decided to do, and their goals:
 
 - **Centralities of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
-- **Graphs features**: extract the graphs features and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- **Graphs feature vector**: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- 
 - **Distances between cities**: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*in progress...*]
@@ -35,7 +36,8 @@ Below we will present some important experiments we have decided to do, and thei
 ### Libraries: networkx, pandas, numpy, [...]
 ### Machine for experiments: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNj
-Y3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2
-NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
+eyJoaXN0b3J5IjpbMTY5NTI0ODE5NiwyNjgxMzM4NzUsLTExNT
+AwMTMwNzksNTM2Njc5NzQ5LC04MDk0NjA1MTEsLTIxMTk4NTIz
+MzUsMTI1NTkyMDY3MiwtMjA4NTA4MDEwMywzNTI1NTMzMzFdfQ
+==
 -->

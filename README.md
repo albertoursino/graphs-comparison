@@ -28,6 +28,7 @@ As you may have understood, this is an **application project**: we are going to 
 - [*in progress...*]
 
 **Libraries**: NetworkX, Pandas, Numpy, Matplotlib, [...]
+
 **Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 
 ## Algorithms
@@ -36,8 +37,8 @@ In general, we will try to use exact algorithms; if, however, the graph is too l
 
 For the clustering experiment there are at least two approaches; for example "graph embeddings" or specific cluster algorithms for graphs. We haven't covered them yet [TO DO]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAzMDgxNjk3LDE1NTY3MzY0NjgsMTgwOD
-Q0NDEwNSwyNjgxMzM4NzUsLTExNTAwMTMwNzksNTM2Njc5NzQ5
-LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
-A4NTA4MDEwMywzNTI1NTMzMzFdfQ==
+eyJoaXN0b3J5IjpbLTQ0OTcwMDA4MSwxNTU2NzM2NDY4LDE4MD
+g0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNjY3OTc0
+OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2NzIsLT
+IwODUwODAxMDMsMzUyNTUzMzMxXX0=
 -->

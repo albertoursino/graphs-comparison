@@ -24,19 +24,19 @@ The purpose of the project is to analyze **two graphs**:
 
 From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
 
-Below we will present some important experiments we have decided to do, and their goals:
+**Experiments** we have decided to do, and their goals:
 
-- **Centralities of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
+- *** of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
 - **Graphs feature vector**: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
 - **Distances between cities**: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*in progress...*]
 
-### Libraries: networkx, pandas, numpy, [...]
-### Machine for experiments: 
+**Libraries**: networkx, pandas, numpy, [...]
+**Machine for experiments**: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODQ0NDEwNSwyNjgxMzM4NzUsLTExNT
-AwMTMwNzksNTM2Njc5NzQ5LC04MDk0NjA1MTEsLTIxMTk4NTIz
-MzUsMTI1NTkyMDY3MiwtMjA4NTA4MDEwMywzNTI1NTMzMzFdfQ
-==
+eyJoaXN0b3J5IjpbMTY0ODkxMjQ0NCwxODA4NDQ0MTA1LDI2OD
+EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
+MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
+M1MjU1MzMzMV19
 -->

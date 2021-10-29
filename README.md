@@ -25,7 +25,7 @@ As you may have understood, this is an **application project**: we are going to 
 - ***Graphs feature vector***: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
 - ***Distances between cities***: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
 - ***Clustering***: compute clusters on both graphs and compare them in order to find some similar clusters.
-- [*in progress...*]
+- [*maybe others...*]
 
 **Libraries**: NetworkX, Pandas, Numpy, Matplotlib, [...]
 
@@ -37,7 +37,7 @@ In general, we will try to use exact algorithms; if, however, the graph is too l
 
 For the clustering experiment there are at least two approaches; for example "graph embeddings" or specific cluster algorithms for graphs. We haven't covered them yet [TO DO]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTcwMDA4MSwxNTU2NzM2NDY4LDE4MD
+eyJoaXN0b3J5IjpbMTk5MDkyOTA3MiwxNTU2NzM2NDY4LDE4MD
 g0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNjY3OTc0
 OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2NzIsLT
 IwODUwODAxMDMsMzUyNTUzMzMxXX0=

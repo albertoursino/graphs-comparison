@@ -20,6 +20,9 @@ From the comparison of the features computed on both these two graphs, the aim i
 
 ## Method
 
+- **Problems**:
+- **Algorithms**:
+
 ## Intended experiments
 
 From the previous sections you may have understood this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.

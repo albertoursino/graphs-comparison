@@ -17,7 +17,7 @@ The purpose of the project is to analyze **two graphs**:
     
 ## Method
 
-- **Problems**: we would like to compute 1) betweeness centralities and closeness centralities for each node of both networks, 2) compute clusters in order to identify communities, for example, see whether European cities are more likely to establish a "sister city" bond within Europe, as well as for other countries like U.S. between American cities. 
+- **Problems**: we would like to compute 1) betweeness centralities and closeness centralities for each node of both networks, 2) compute clusters in order to identify communities, for example, see whether European cities are more likely to establish a "sister city" bond within Europe, as well as for other countries like U.S. between American cities. 3) Compute some graph-level features, for instance [TO DO]
 - **Algorithms**: for 1) we will try to use exact algorithms; if, however, the graph is too large or the computation requires time, we will try approximate algorithms, such as Eppstein-Wang or Chechik-Cohen. For 2) there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
 
 ## Intended experiments

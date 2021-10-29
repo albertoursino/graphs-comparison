@@ -30,14 +30,13 @@ From the previous sections you may have understood this is an **application proj
 **Libraries**: NetworkX, Pandas, Numpy, Matplotlib, [...]
 **Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 
-## Method
+## Algorithms
 
-### Algorithms
-In general, we will try to use exact algorithms; if, however, the graph is too large or the computation requires time, we will try approximate algorithms, such as ***Eppstein-Wang*** or ***Chechik-Cohen***. 
+In general, we will try to use exact algorithms; if, however, the graph is too large or the computation requires too much time, we will try approximate algorithms, such as ***Eppstein-Wang*** or ***Chechik-Cohen***. 
 For the clustering experiment there are at least two approaches, like graph embeddings or cluster algorithms specific to graphs. We haven't covered them yet [TO DO]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwMjQ3OTQxLDE1NTY3MzY0NjgsMTgwOD
-Q0NDEwNSwyNjgxMzM4NzUsLTExNTAwMTMwNzksNTM2Njc5NzQ5
-LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
-A4NTA4MDEwMywzNTI1NTMzMzFdfQ==
+eyJoaXN0b3J5IjpbLTExNzE4OTI1NDIsMTU1NjczNjQ2OCwxOD
+A4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3
+NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC
+0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
 -->

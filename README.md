@@ -32,9 +32,9 @@ From the previous sections you may have understood this is an **application proj
 - [*in progress...*]
 
 **Libraries**: networkx, pandas, numpy, [...]
-**Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the IntelliJ environment.
+**Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI1Mjc1MywxODA4NDQ0MTA1LDI2OD
+eyJoaXN0b3J5IjpbMTA0OTg4NTY2OSwxODA4NDQ0MTA1LDI2OD
 EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
 MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
 M1MjU1MzMzMV19

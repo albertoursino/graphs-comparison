@@ -26,16 +26,16 @@ From the previous sections you may have understood this is an **application proj
 
 **Experiments** we have decided to do, and their goals:
 
-- *** of cities**: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
-- **Graphs feature vector**: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
-- **Distances between cities**: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
-- **Clustering**: compute clusters on both graphs and compare them in order to find some similar clusters.
+- ***Centralities of cities***: calculate various types of centralities of all the nodes on both graphs and compare them for the purpose of finding an eventual correlation.
+- ***Graphs feature vector***: extract the feature vector of both graphs and compare them with the intention of looking at the differences and maybe extract some interesting results.
+- ***Distances between cities***: analyze some graphs paths (e.g. the shortest path from two cities in both graphs) and try to find similarities. 
+- ***Clustering***: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*in progress...*]
 
 **Libraries**: networkx, pandas, numpy, [...]
-**Machine for experiments**: 
+**Machine for experiments**: Ryzen 2600x, RTX 3060, 16GB of RAM, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODkxMjQ0NCwxODA4NDQ0MTA1LDI2OD
+eyJoaXN0b3J5IjpbMTEzNTM0OTg5OSwxODA4NDQ0MTA1LDI2OD
 EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
 MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
 M1MjU1MzMzMV19

@@ -2,6 +2,7 @@ import csv
 import os
 import pathlib
 import networkx as nx
+from matplotlib.patches import ArrowStyle
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 
@@ -13,19 +14,17 @@ def main():
     airports_set = read_airports()
     routes = read_routes()
 
-    print(airports_set[0])
-    print(read_routes()[0])
-    # print(wd_path)
+    # print(airports_set[0])
+    # print(read_routes()[0])
 
-    # range(100) because I need to test the method fast (can't wait to plot more then 5k airports).
-    for i in tqdm(range(6)):
+    # range(x) because I need to test the method fast (can't wait to plot more then 5k airports).
+    for i in tqdm(range(10)):
         # Take an airport from the "airport.dat" dataset
         source_airport = airports_set[i]
         # Extrapolate its city (the source city)
         city = source_airport[2]
         # Extrapolate its ID
         source_airport_ID = source_airport[8]
-        print(city, source_airport_ID)
         if city != "":
             for route in routes:
                 # From all the routes I need to find the destination airports from the initial airport
@@ -41,7 +40,6 @@ def main():
                                 G.add_edge(city, dest_city)
     nx.drawing.draw(G, node_size=10)
     # TODO: show the graph on a planisphere
-    # TODO: Give the name only to nodes which have more than x neighbours
     # TODO: Weight edges
     plt.show()
 

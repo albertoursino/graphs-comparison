@@ -1,0 +1,11 @@
+SELECT ?city ?cityLabel ?city_population ?city_coordinate_location ?sister ?sisterLabel ?sister_population ?sister_coordinate_location WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    ?city wdt:P31 wd:Q515.
+    ?city wdt:P625 ?city_coordinate_location.
+    ?city wdt:P1082 ?city_population.
+    ?city wdt:P190 ?sister.
+    ?sister wdt:P1082 ?sister_population.
+    ?sister wdt:P625 ?sister_coordinate_location.
+    FILTER(?city_population > 1000000)
+    FILTER(?sister_population > 1000000)
+}

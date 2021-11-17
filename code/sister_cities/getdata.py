@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import json
 
 import networkx as nx
@@ -7,10 +5,9 @@ import wdutil
 
 from pathlib import Path
 
-
 cities = {}
 sisters = set()
-query = Path('').expanduser().read_text()
+query = Path('big-sister-cities.sparql').absolute().read_text()
 prefixes = ['city', 'sister']
 
 
@@ -18,9 +15,11 @@ def add_city(record, cid, prefix):
     if cid in cities:
         cities[cid]['degree'] += 1
     else:
-        lon, lat = wdutil.coords(record[f'{prefix}_coordinate_location']['value'])
+        lon, lat = wdutil.coord(record[f'{prefix}_coordinate_location']['value'])
         cities[cid] = {
+            # How many times we encounter this city
             'degree': 1,
+            # This is the the name of the city or its sister depending on prefix
             'label': record[f'{prefix}Label']['value'],
             'lon': lon,
             'lat': lat,
@@ -29,7 +28,12 @@ def add_city(record, cid, prefix):
 
 
 resp = wdutil.request(query)
+
 for record in resp['results']['bindings']:
+
+    # in general we get something like http://www.wikidata.org/entity/Q84 (London)
+    # we retain only the code Q84
+
     city_id = record['city']['value'].split('/')[-1]
     sister_id = record['sister']['value'].split('/')[-1]
 
@@ -44,8 +48,9 @@ with open('big-sister-cities.json', 'w') as f:
 
 
 G = nx.Graph()
-for id, attr in cities.items():
-    G.add_node(id, **attr)
+for cid, attr in cities.items():
+    # attr is a dictionary with information about the city
+    G.add_node(cid, **attr)
 for sister in sisters:
     G.add_edge(sister[0], sister[1])
 nx.write_gexf(G, 'big-sister-cities.gexf')

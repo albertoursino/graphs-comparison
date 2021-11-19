@@ -16,8 +16,8 @@ def create_routes_complete():
 
 def read_routes():
     """
-    TODO
-    :return: matrix with all routes_complete.csv entries
+    Reads the file "routes_complete.csv"
+    :return: matrix with all "routes_complete.csv" entries
     """
     # Before reading routes_complete.csv we check if it should be update
     if update:

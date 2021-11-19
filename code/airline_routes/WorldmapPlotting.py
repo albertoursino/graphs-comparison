@@ -1,9 +1,15 @@
+import os
+import pathlib
+
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import networkx as nx
 from tqdm import tqdm
 
 import Utility
+
+wd_path = os.path.abspath(os.path.join(os.path.join(pathlib.Path().resolve(), '..'), '..'))
+os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\airline_routes_data"
 
 
 def main():
@@ -13,13 +19,15 @@ def main():
     edges = []
     positions = {}
     routes = Utility.read_routes()
-    # It iterates only the first 150 routes in order to avoid entries with "N/D" values
-    for entry in tqdm(routes[0:150], desc="Creating airline routes graph"):
-        cities.append(entry[4])
-        cities.append(entry[9])
-        edges.append((entry[4], entry[9]))
-        positions[entry[4]] = (float(entry[6]), float(entry[5]))
-        positions[entry[9]] = (float(entry[11]), float(entry[10]))
+    for entry in tqdm(routes, desc="Creating airline routes graph"):
+        source_city = entry[4]
+        dest_city = entry[9]
+        if source_city != "#N/D" and dest_city != "#N/D":
+            cities.append(source_city)
+            cities.append(dest_city)
+            edges.append((source_city, dest_city))
+            positions[source_city] = (float(entry[6]), float(entry[5]))
+            positions[dest_city] = (float(entry[11]), float(entry[10]))
 
     G = nx.Graph()
     G.add_nodes_from(cities)
@@ -28,16 +36,17 @@ def main():
         if G.has_edge(edge[0], edge[1]):
             G[edge[0]][edge[1]]['weight'] += 1
         else:
-            G.add_edge(edge[0], edge[1], weight=1)
+            G.add_edge(edge[0], edge[1], weight=1, )
 
-    ax = plt.axes(projection=ccrs.PlateCarree())
-    ax.stock_img()
-    nx.draw_networkx_nodes(G, positions, node_size=2, nodelist=cities)
-    nx.draw_networkx_edges(G, positions, edgelist=edges)
+    fig = plt.figure()
+    ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
+    ax.background_img(name='BM', resolution='high')
+
+    nx.draw_networkx_nodes(G, positions, node_size=0, nodelist=cities)
+    nx.draw_networkx_edges(G, positions, edgelist=edges, width=0.005, edge_color="red")
+
+    plt.savefig(wd_path + r'/data/airline_routes_data/plotted_graph.jpg', dpi=1000)
     plt.show()
-
-    # TODO: the graph needs to be restyled, because now it's painful to watch
-    # TODO: we need to decide how to manage the pathological entries of routes_complete.csv
 
 
 if __name__ == "__main__":

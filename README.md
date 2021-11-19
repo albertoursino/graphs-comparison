@@ -1,5 +1,5 @@
 
-# Comparison between the graphs "sister cities" and "airline routes"
+# Find similarities between graphs
 
 This is the presentation paper of a *Learning From Network* course's project.
 In the following sections we will present the project idea, the results we are hoping to obtain and finally the material we currently have and some details of our way to procede.

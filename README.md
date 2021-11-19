@@ -38,9 +38,16 @@ In general, we will try to use exact algorithms; if, however, the graph is too l
 For the clustering experiment there are at least two approaches; for example "graph embeddings" or specific cluster algorithms for graphs. 
 
 There are certainly other algorithms that we can come up with but we are going to learn them later during the course.
+
+## Bibliography
+- [Not all paths lead to Rome: Analysing the network of sister cities](https://arxiv.org/abs/1301.6900)
+- [OpenFlights](https://openflights.org/data.html)
+- 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwMjQyNDQ2LDE3NDI1NjczOTMsMTU1Nj
-czNjQ2OCwxODA4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3
-OSw1MzY2Nzk3NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMj
-U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
+eyJoaXN0b3J5IjpbMTU0NDU1MzM4Niw3NTAyNDI0NDYsMTc0Mj
+U2NzM5MywxNTU2NzM2NDY4LDE4MDg0NDQxMDUsMjY4MTMzODc1
+LC0xMTUwMDEzMDc5LDUzNjY3OTc0OSwtODA5NDYwNTExLC0yMT
+E5ODUyMzM1LDEyNTU5MjA2NzIsLTIwODUwODAxMDMsMzUyNTUz
+MzMxXX0=
 -->

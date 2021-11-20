@@ -1,5 +1,6 @@
 import json
-
+import cartopy.crs as ccrs
+import matplotlib.pyplot as plt
 import networkx as nx
 import wdutil
 
@@ -54,3 +55,19 @@ for cid, attr in cities.items():
 for sister in sisters:
     G.add_edge(sister[0], sister[1])
 nx.write_gexf(G, 'big-sister-cities.gexf')
+
+
+if __name__ == "__main__":
+    G=nx.readwrite.read_gexf('big-sister-cities.gexf')
+    positions = {}
+    for node, d in G.nodes(data=True):
+        positions[node] = (d['lon'],d['lat'])
+    print(positions)
+    fig = plt.figure()
+    ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
+    #ax.background_img(name='BM', resolution='high')
+    ax.background_img()
+
+    nx.draw_networkx_nodes(G, positions, node_size=0, nodelist=cities)
+    nx.draw_networkx_edges(G, positions, edgelist=G.edges, width=0.5, edge_color="red")
+    plt.show()

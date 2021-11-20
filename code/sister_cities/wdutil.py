@@ -1,7 +1,6 @@
 import re
 import requests
 
-
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
 
@@ -18,4 +17,3 @@ def request(query):
 
 def test_coord():
     assert (-73.94, 40.67) == coord('Point(-73.94 40.67)')
-

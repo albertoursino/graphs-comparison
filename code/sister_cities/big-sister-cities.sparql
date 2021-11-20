@@ -6,6 +6,6 @@ SELECT ?city ?cityLabel ?city_population ?city_coordinate_location ?sister ?sist
     ?city wdt:P190 ?sister.
     ?sister wdt:P1082 ?sister_population.
     ?sister wdt:P625 ?sister_coordinate_location.
-    FILTER(?city_population > 1000000)
-    FILTER(?sister_population > 1000000)
+    FILTER(?city_population > 50000)
+    FILTER(?sister_population > 50000)
 }

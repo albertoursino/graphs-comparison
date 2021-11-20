@@ -1,7 +1,7 @@
 
 # Find similarities between graphs
 
-![](https://github.com/albertoursino/GraphsComparison/blob/Airline-Routes/data/airline_routes_data/plotted_graph.png?raw=true)
+![Airline Routes](https://github.com/albertoursino/GraphsComparison/blob/Airline-Routes/data/airline_routes_data/plotted_graph.png?raw=true)
 This is the presentation paper of a *Learning From Network* course's project.
 In the following sections we will present the project idea, the results we are hoping to obtain and finally the material we currently have and some details of our way to procede.
 
@@ -46,9 +46,10 @@ There are certainly other algorithms that we can come up with but we are going t
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2NDEzMDQ2LC0yOTA2NzczNjgsLTE5MT
-k4MDg3Myw3NTAyNDI0NDYsMTc0MjU2NzM5MywxNTU2NzM2NDY4
-LDE4MDg0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNj
-Y3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2
-NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
+eyJoaXN0b3J5IjpbMTEyMzQ1MDE0Niw4NzY0MTMwNDYsLTI5MD
+Y3NzM2OCwtMTkxOTgwODczLDc1MDI0MjQ0NiwxNzQyNTY3Mzkz
+LDE1NTY3MzY0NjgsMTgwODQ0NDEwNSwyNjgxMzM4NzUsLTExNT
+AwMTMwNzksNTM2Njc5NzQ5LC04MDk0NjA1MTEsLTIxMTk4NTIz
+MzUsMTI1NTkyMDY3MiwtMjA4NTA4MDEwMywzNTI1NTMzMzFdfQ
+==
 -->

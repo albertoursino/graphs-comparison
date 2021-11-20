@@ -4,6 +4,7 @@ import pathlib
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import networkx as nx
+import pickle
 from tqdm import tqdm
 
 import Utility
@@ -40,12 +41,13 @@ def main():
 
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
-    ax.background_img(name='BM', resolution='high')
+    ax.background_img(name='ETOPO', resolution='high')
 
-    nx.draw_networkx_nodes(G, positions, node_size=0, nodelist=cities)
+    nx.draw_networkx_nodes(G, positions, node_size=0.008, nodelist=cities, node_shape="o", linewidths=0,
+                           node_color="black", alpha=0.9)
     nx.draw_networkx_edges(G, positions, edgelist=edges, width=0.005, edge_color="red")
 
-    plt.savefig(wd_path + r'/data/airline_routes_data/plotted_graph.jpg', dpi=1000)
+    plt.savefig(wd_path + r'/data/airline_routes_data/plotted_graph.png', format='png', dpi=1200)
     plt.show()
 
 

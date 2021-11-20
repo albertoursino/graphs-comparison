@@ -1,5 +1,5 @@
 
-# Find similarities between graphs
+# Find similarities between two graphs
 
 ![Airline Routes](https://github.com/albertoursino/GraphsComparison/blob/Airline-Routes/data/airline_routes_data/plotted_graph.png?raw=true)![Sister Cities](https://github.com/albertoursino/GraphsComparison/blob/Sister-Cities/data/sister_cities_data/plotted_graph.png?raw=true)
 This is the presentation paper of a *Learning From Network* course's project.

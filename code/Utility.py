@@ -2,7 +2,7 @@ import csv
 import os
 import pathlib
 
-wd_path = os.path.abspath(os.path.join(os.path.join(pathlib.Path().resolve(), '..'), '..'))
+wd_path = os.path.abspath(os.path.join(pathlib.Path().resolve(), '..'))
 
 # If the files airports.dat and/or routes.dat are updated then we should update also routes_complete.csv
 # -> update = True

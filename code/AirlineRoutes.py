@@ -4,12 +4,11 @@ import pathlib
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import networkx as nx
-import pickle
 from tqdm import tqdm
 
 import Utility
 
-wd_path = os.path.abspath(os.path.join(os.path.join(pathlib.Path().resolve(), '..'), '..'))
+wd_path = os.path.abspath(os.path.join(pathlib.Path().resolve(), '..'))
 os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\airline_routes_data"
 
 
@@ -39,11 +38,14 @@ def main():
         else:
             G.add_edge(edge[0], edge[1], weight=1, )
 
+    # Plotting graph
+    print("Plotting the graph...")
+
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
     ax.background_img(name='ETOPO', resolution='high')
 
-    nx.draw_networkx_nodes(G, positions, node_size=0.008, nodelist=cities, node_shape="o", linewidths=0,
+    nx.draw_networkx_nodes(G, positions, node_size=0.007, nodelist=cities, node_shape="o", linewidths=0,
                            node_color="black", alpha=0.9)
     nx.draw_networkx_edges(G, positions, edgelist=edges, width=0.005, edge_color="red")
 

@@ -1,0 +1,25 @@
+SELECT DISTINCT ?item ?itemNamedAfter ?Municipality WHERE {
+      
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+      ?item p:P239 ?statement0.
+      ?statement0 (ps:P239) _:anyValueP239.
+      ?item p:P238 ?statement1.
+      ?statement1 (ps:P238) _:anyValueP238.
+      ?item wdt:P138 ?itemNamedAfter.
+  
+      ?itemNamedAfter wdt:P31 ?obj 
+  
+      {?itemNamedAfter wdt:P31 wd:Q486972} union
+      {?itemNamedAfter wdt:P31 wd:Q515} union
+      {?itemNamedAfter wdt:P31 wd:Q208511} union
+      {?itemNamedAfter wdt:P31 wd:Q1549591} union
+      {?itemNamedAfter wdt:P31 wd:Q15284} union
+      {?itemNamedAfter wdt:P31 wd:Q1637706} union
+      {?itemNamedAfter wdt:P31 wd:Q5119} union
+      {?itemNamedAfter wdt:P31 wd:Q13218391} union
+      {?itemNamedAfter wdt:P31 wd:Q3957} union
+      {?itemNamedAfter wdt:P31 wd:Q200250} union
+      {?itemNamedAfter wdt:P31 wd:Q51929311} union
+      {?itemNamedAfter wdt:P31 wd:Q702492} union
+      {?obj wdt:P279 wd:Q15284}.
+}

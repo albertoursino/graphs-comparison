@@ -1,23 +1,14 @@
-import json
 import os
-import pathlib
-
+from pathlib import Path
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import networkx as nx
-import pickle
 from tqdm import tqdm
 
 import Utility
 
-from pathlib import Path
-
-wd_path = os.path.abspath(os.path.join(pathlib.Path().resolve(), '..'))
-os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\sister_cities_data"
-
 cities = {}
 sisters = set()
-query = Path('../data/sister_cities_data/big-sister-cities.sparql').absolute().read_text()
 prefixes = ['city', 'sister']
 
 
@@ -37,25 +28,10 @@ def add_city(record, cid, prefix):
         }
 
 
-def parsing(download=True):
-    """
-    This method queries wikidata in order to extrapolate sister cities data
-    :param download: if query.pkl is already present in "data/sister_cities_data/" and if you don't want to update
-    the query, you should set this parameter to False
-    """
-    if download:
-        print("Downloading data...")
-        resp = Utility.request(query)
-        file = open(wd_path + r"\data\sister_cities_data\query.pkl", "wb")
-        pickle.dump(resp, file)
-    else:
-        file = open(wd_path + r"\data\sister_cities_data\query.pkl", "rb")
-        resp = pickle.load(file)
-
+def parse_response(resp):
     for record in tqdm(resp['results']['bindings'], desc="Parsing"):
         # in general we get something like http://www.wikidata.org/entity/Q84 (London)
         # we retain only the code Q84
-
         city_id = record['city']['value'].split('/')[-1]
         sister_id = record['sister']['value'].split('/')[-1]
 
@@ -65,14 +41,17 @@ def parsing(download=True):
         add_city(record, city_id, prefix='city')
         add_city(record, sister_id, prefix='sister')
 
-    with open('../data/sister_cities_data/big-sister-cities.json', 'w') as f:
-        json.dump({'cities': cities, 'sisters': list(sisters)}, f)
+    # with open('../data/sister_cities_data/big-sister-cities.json', 'w') as f:
+    #    json.dump({'cities': cities, 'sisters': list(sisters)}, f)
 
 
 def build_graph():
     """
     Build the sister cities graph inserting nodes (cities) and edges (sister bond)
     """
+    query = Path('../data/sister_cities_data/big-sister-cities.sparql').absolute().read_text()
+    resp = Utility.request(query)
+    parse_response(resp)
     G = nx.Graph()
     for cid, attr in tqdm(cities.items(), desc="Creating graph"):
         # attr is a dictionary with information about the city
@@ -80,22 +59,19 @@ def build_graph():
     for sister in sisters:
         G.add_edge(sister[0], sister[1])
     nx.write_gexf(G, '../data/sister_cities_data/big-sister-cities.gexf')
+    return G
 
 
-def main(download_query=True, create_graph=True):
-    parsing(download_query)
-    if create_graph:
-        build_graph()
-
-    # Plotting graph
-    print("Plotting the graph...")
-    G = nx.readwrite.read_gexf('../data/sister_cities_data/big-sister-cities.gexf')
+def plot(G):
     positions = {}
     for node, d in G.nodes(data=True):
         positions[node] = (d['lon'], d['lat'])
 
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
+
+    wd_path = os.path.abspath(os.path.join(Path().resolve(), '..'))
+    os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\sister_cities_data"
     ax.background_img(name='ETOPO', resolution='high')
 
     nx.draw_networkx_nodes(G, positions, node_size=0.03, nodelist=cities, node_shape="o", linewidths=0,
@@ -106,5 +82,5 @@ def main(download_query=True, create_graph=True):
     plt.show()
 
 
-if __name__ == "__main__":
-    main(False, False)
+# if __name__ == "__main__":
+#    main(False, True)

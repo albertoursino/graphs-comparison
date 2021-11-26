@@ -1,11 +1,13 @@
-SELECT ?city ?cityLabel ?city_population ?city_coordinate_location ?sister ?sisterLabel ?sister_population ?sister_coordinate_location WHERE {
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+SELECT ?city ?cityLabel ?city_population ?city_coordinate_location ?city_countryLabel ?sister ?sisterLabel ?sister_population ?sister_coordinate_location ?sister_countryLabel WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
     ?city wdt:P31 wd:Q515.
     ?city wdt:P625 ?city_coordinate_location.
     ?city wdt:P1082 ?city_population.
     ?city wdt:P190 ?sister.
+    ?city wdt:P17 ?city_country.
     ?sister wdt:P1082 ?sister_population.
     ?sister wdt:P625 ?sister_coordinate_location.
-    FILTER(?city_population > 50000)
-    FILTER(?sister_population > 50000)
+    ?sister wdt:P17 ?sister_country.
+    FILTER(?city_population > 10000)
+    FILTER(?sister_population > 10000)
 }

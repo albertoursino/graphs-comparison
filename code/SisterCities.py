@@ -24,7 +24,8 @@ def add_city(record, cid, prefix):
             'label': record[f'{prefix}Label']['value'],
             'lon': lon,
             'lat': lat,
-            'pop': int(record[f'{prefix}_population']['value'])
+            'pop': int(record[f'{prefix}_population']['value']),
+            'country': record[f'{prefix}_countryLabel']['value']
         }
 
 
@@ -80,7 +81,3 @@ def plot(G):
 
     plt.savefig(wd_path + r'/data/sister_cities_data/plotted_graph.png', format='png', dpi=1200)
     plt.show()
-
-
-# if __name__ == "__main__":
-#    main(False, True)

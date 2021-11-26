@@ -14,3 +14,6 @@ try:
     routesG = nx.readwrite.read_gexf('../data/airline_routes_data/routes.gexf')
 except FileNotFoundError:
     routesG = AirlineRoutes.build_graph()
+
+node = s_citiesG.nodes['Q84']
+print(node['country'])

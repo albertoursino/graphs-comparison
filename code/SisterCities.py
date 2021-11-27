@@ -1,10 +1,6 @@
-import os
 from pathlib import Path
-import cartopy.crs as ccrs
-import matplotlib.pyplot as plt
 import networkx as nx
 from tqdm import tqdm
-
 import Utility
 
 cities = {}
@@ -42,9 +38,6 @@ def parse_response(resp):
         add_city(record, city_id, prefix='city')
         add_city(record, sister_id, prefix='sister')
 
-    # with open('../data/sister_cities_data/big-sister-cities.json', 'w') as f:
-    #    json.dump({'cities': cities, 'sisters': list(sisters)}, f)
-
 
 def build_graph():
     """
@@ -59,25 +52,14 @@ def build_graph():
         G.add_node(cid, **attr)
     for sister in sisters:
         G.add_edge(sister[0], sister[1])
-    nx.write_gexf(G, '../data/sister_cities_data/big-sister-cities.gexf')
+    nx.write_gexf(G, '../data/sister_cities_data/sister_cities.gexf')
     return G
 
 
-def plot(G):
-    positions = {}
-    for node, d in G.nodes(data=True):
-        positions[node] = (d['lon'], d['lat'])
+def main():
+    G = build_graph()
+    Utility.plot(G, 'sister_cities_data/complete_sister_cities_plot.png')
 
-    fig = plt.figure()
-    ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
 
-    wd_path = os.path.abspath(os.path.join(Path().resolve(), '..'))
-    os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\sister_cities_data"
-    ax.background_img(name='ETOPO', resolution='high')
-
-    nx.draw_networkx_nodes(G, positions, node_size=0.03, nodelist=cities, node_shape="o", linewidths=0,
-                           node_color="black", alpha=0.9)
-    nx.draw_networkx_edges(G, positions, edgelist=G.edges, width=0.06, edge_color="red")
-
-    plt.savefig(wd_path + r'/data/sister_cities_data/plotted_graph.png', format='png', dpi=1200)
-    plt.show()
+if __name__ == "__main__":
+    main()

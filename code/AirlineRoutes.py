@@ -1,20 +1,18 @@
 import os
 from pathlib import Path
-import cartopy.crs as ccrs
-import matplotlib.pyplot as plt
 import networkx as nx
 from tqdm import tqdm
 import csv
+import Utility
 
 wd_path = os.path.abspath(os.path.join(Path().resolve(), '..'))
-
-cities = {}
 
 
 def build_graph():
     # All the nodes will be stored in "cities", all the edges in "edges" and in positions the coordinates
     # associated to each city.
     edges = []
+    cities = {}
 
     file = open(wd_path + "/data/airline_routes_data/routes_complete.csv", encoding="utf-8")
     routes = csv.reader(file)
@@ -50,24 +48,10 @@ def build_graph():
     return G
 
 
-def plot(G):
-    positions = {}
-    for node, d in G.nodes(data=True):
-        positions[node] = (d['lon'], d['lat'])
-
-    os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data\airline_routes_data"
-    fig = plt.figure()
-    ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
-    ax.background_img(name='ETOPO', resolution='high')
-
-    nx.draw_networkx_nodes(G, positions, node_size=0.03, nodelist=G.nodes, node_shape="o", linewidths=0,
-                           node_color="black", alpha=0.9)
-    nx.draw_networkx_edges(G, positions, edgelist=G.edges, width=0.06, edge_color="red")
-
-    plt.savefig(wd_path + r'/data/airline_routes_data/plotted_graph.png', format='png', dpi=1200)
-    plt.show()
+def main():
+    G = build_graph()
+    Utility.plot(G, 'airline_routes_data/complete_routes_plot.png')
 
 
 if __name__ == "__main__":
-    G = build_graph()
-    plot(G)
+    main()

@@ -25,10 +25,12 @@ def build_graph():
         if source_city != "#N/D" and dest_city != "#N/D":
             if source_city not in cities:
                 cities[source_city] = {'lat': float(entry[5]),
-                                       'lon': float(entry[6])}
+                                       'lon': float(entry[6]),
+                                       'country': entry[12]}
             if dest_city not in cities:
                 cities[dest_city] = {'lat': float(entry[10]),
-                                     'lon': float(entry[11])}
+                                     'lon': float(entry[11]),
+                                     'country': entry[13]}
 
             edges.append((source_city, dest_city))
 

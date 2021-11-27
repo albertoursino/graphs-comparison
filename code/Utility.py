@@ -3,6 +3,7 @@ import requests
 import csv
 import os
 import pathlib
+import unicodedata2
 
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
@@ -39,3 +40,13 @@ def read_routes():
     for row in csv_reader:
         rows.append(row)
     return rows
+
+
+def remove_diacritics(str):
+    """
+    Substitutes diacritics of the input string with normalized Unicode characters
+    :param str: the string to be normalized
+    :return: normalized string
+    """
+    nfkd_form = unicodedata2.normalize('NFKD', str)
+    return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)])

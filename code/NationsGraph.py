@@ -3,7 +3,8 @@ import networkx as nx
 
 def extrapolate_country_edges(graph):
     """
-    Extrapolates city edges from a graph and create a dictionary of triplets in the form (source_country, dest_country, weight)
+    Extrapolates city edges from a graph and create a dictionary in the form
+    {('source_node', 'dest_node'): [x], ...} where x is the weight of the edge
     :return: instance of a dictionary
     """
     edges = {}
@@ -21,8 +22,8 @@ def extrapolate_country_edges(graph):
 
 def build_nations_graph(edge_dict):
     """
-    Takes an edge dictionary in the form {('source_node', 'dest_node'): [x], ...} where x is the weight of the edge and
-    builds a graph with it.
+    Takes an edge dictionary in the form {('source_node', 'dest_node'): [x], ...}
+    where x is the weight of the edge and builds a graph with it.
     :param edge_dict: instance of a dictionary
     :return: instance of a graph
     """

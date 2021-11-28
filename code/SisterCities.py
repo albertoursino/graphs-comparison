@@ -2,6 +2,7 @@ from pathlib import Path
 import networkx as nx
 from tqdm import tqdm
 import Utility
+from Utility import ss_dir_path
 
 cities = {}
 sisters = set()
@@ -9,6 +10,13 @@ prefixes = ['city', 'sister']
 
 
 def add_city(record, cid, prefix):
+    """
+    # TODO
+    :param record:
+    :param cid:
+    :param prefix:
+    :return:
+    """
     if cid in cities:
         cities[cid]['degree'] += 1
     else:
@@ -26,6 +34,11 @@ def add_city(record, cid, prefix):
 
 
 def parse_response(resp):
+    """
+    # TODO
+    :param resp:
+    :return:
+    """
     for record in tqdm(resp['results']['bindings'], desc="Parsing"):
         # in general we get something like http://www.wikidata.org/entity/Q84 (London)
         # we retain only the code Q84
@@ -41,24 +54,25 @@ def parse_response(resp):
 
 def build_graph():
     """
-    Build the sister cities graph inserting nodes (cities) and edges (sister bond)
+    Builds the sister cities graph inserting nodes (cities) and edges (sister bond)
+    :return: an instance of the graph
     """
-    query = Path('../data/sister_cities_data/big-sister-cities.sparql').absolute().read_text()
+    query = Path(ss_dir_path + 'big-sister-cities.sparql').absolute().read_text()
     resp = Utility.request(query)
     parse_response(resp)
     G = nx.Graph()
-    for cid, attr in tqdm(cities.items(), desc="Creating graph"):
+    for cid, attr in tqdm(cities.items(), desc="Adding nodes"):
         # attr is a dictionary with information about the city
         G.add_node(cid, **attr)
-    for sister in sisters:
+    for sister in tqdm(sisters, desc="Adding edges"):
         G.add_edge(sister[0], sister[1])
-    nx.write_gexf(G, '../data/sister_cities_data/sister_cities.gexf')
+    nx.write_gexf(G, ss_dir_path + 'sister_cities.gexf')
     return G
 
 
 def main():
     G = build_graph()
-    Utility.plot(G, 'sister_cities_data/complete_sister_cities_plot.png')
+    Utility.save_plot(G, ss_dir_path + 'complete_sister_cities_plot.png')
 
 
 if __name__ == "__main__":

@@ -1,17 +1,15 @@
 import re
 import requests
-import csv
 import os
-import pathlib
 import unicodedata2
 import matplotlib.pyplot as plt
 import networkx as nx
 import cartopy.crs as ccrs
-from pathlib import Path
 
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
-wd_path = os.path.abspath(os.path.join(pathlib.Path().resolve(), '..'))
+ss_dir_path = "../data/sister_cities_data/"
+ar_dir_path = "../data/airline_routes_data/"
 
 
 def coord(point):
@@ -33,19 +31,6 @@ def create_routes_complete():
     pass
 
 
-def read_routes():
-    """
-    Reads the file "routes_complete.csv"
-    :return: matrix with all "routes_complete.csv" entries
-    """
-    rows = []
-    file = open(wd_path + "/data/airline_routes_data/routes_complete.csv", encoding="utf-8")
-    csv_reader = csv.reader(file)
-    for row in csv_reader:
-        rows.append(row)
-    return rows
-
-
 def remove_diacritics(string):
     """
     Substitutes diacritics of the input string with normalized Unicode characters
@@ -56,11 +41,11 @@ def remove_diacritics(string):
     return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)])
 
 
-def plot(graph, save_image_path):
+def save_plot(graph, path):
     """
     # TODO
     :param graph:
-    :param save_image_path:
+    :param path:
     :return:
     """
     positions = {}
@@ -70,12 +55,12 @@ def plot(graph, save_image_path):
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
 
-    os.environ["CARTOPY_USER_BACKGROUNDS"] = wd_path + r"\data"
+    os.environ["CARTOPY_USER_BACKGROUNDS"] = "../data"
     ax.background_img(name='ETOPO', resolution='high')
 
     nx.draw_networkx_nodes(graph, positions, node_size=0.03, nodelist=graph.nodes, node_shape="o", linewidths=0,
                            node_color="black", alpha=0.9)
     nx.draw_networkx_edges(graph, positions, edgelist=graph.edges, width=0.06, edge_color="red")
 
-    plt.savefig(wd_path + r'/data/' + save_image_path, format='png', dpi=800)
+    plt.savefig(path, format='png', dpi=800)
     plt.show()

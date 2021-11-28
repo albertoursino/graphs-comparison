@@ -1,5 +1,4 @@
 from tqdm import tqdm
-
 import SisterCities
 import AirlineRoutes
 import Utility
@@ -23,10 +22,10 @@ def main():
     print("Routes Graph #nodes:", len(routes_graph.nodes), " #edges: ", len(routes_graph.edges))
 
     # Plotting and saving the reduced graphs
-    Utility.plot(nx.readwrite.read_gexf('../data/airline_routes_data/reduced_routes.gexf'),
-                 "airline_routes_data/reduced_routes_plot.png")
-    Utility.plot(nx.readwrite.read_gexf('../data/sister_cities_data/reduced_sister_cities.gexf'),
-                 "sister_cities_data/reduced_sister_cities_plot.png")
+    Utility.save_plot(nx.readwrite.read_gexf('../data/airline_routes_data/reduced_routes.gexf'),
+                      "airline_routes_data/reduced_routes_plot.png")
+    Utility.save_plot(nx.readwrite.read_gexf('../data/sister_cities_data/reduced_sister_cities.gexf'),
+                      "sister_cities_data/reduced_sister_cities_plot.png")
 
 
 def remove_uncommon_nodes(graph_1, graph_2, file_name_path):

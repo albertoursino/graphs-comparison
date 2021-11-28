@@ -1,20 +1,20 @@
-import os
-from pathlib import Path
 import networkx as nx
 from tqdm import tqdm
 import csv
 import Utility
 
-wd_path = os.path.abspath(os.path.join(Path().resolve(), '..'))
-
 
 def build_graph():
+    """
+    # This method builds the airline routes graph
+    :return: an instance of the graph
+    """
     # All the nodes will be stored in "cities", all the edges in "edges" and in positions the coordinates
     # associated to each city.
     edges = []
     cities = {}
 
-    file = open(wd_path + "/data/airline_routes_data/routes_complete.csv", encoding="utf-8")
+    file = open("../data/airline_routes_data/routes_complete.csv", encoding="utf-8")
     routes = csv.reader(file)
     next(routes)  # skip header
     for entry in tqdm(routes, desc="Creating airline routes graph"):
@@ -50,7 +50,7 @@ def build_graph():
 
 def main():
     G = build_graph()
-    Utility.plot(G, 'airline_routes_data/complete_routes_plot.png')
+    Utility.save_plot(G, 'airline_routes_data/complete_routes_plot.png')
 
 
 if __name__ == "__main__":

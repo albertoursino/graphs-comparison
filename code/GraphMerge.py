@@ -3,38 +3,35 @@ import SisterCities
 import AirlineRoutes
 import Utility
 import networkx as nx
+from Utility import ss_dir_path, ar_dir_path
 
 
 def main():
     try:
-        s_cities_graph = nx.readwrite.read_gexf('../data/sister_cities_data/sister_cities.gexf')
+        s_cities_graph = nx.readwrite.read_gexf(ss_dir_path + 'sister_cities.gexf')
     except FileNotFoundError:
         s_cities_graph = SisterCities.build_graph()
 
     try:
-        routes_graph = nx.readwrite.read_gexf('../data/airline_routes_data/routes.gexf')
+        routes_graph = nx.readwrite.read_gexf(ar_dir_path + 'routes.gexf')
     except FileNotFoundError:
         routes_graph = AirlineRoutes.build_graph()
 
-    remove_uncommon_nodes(s_cities_graph, routes_graph, "sister_cities_data/reduced_sister_cities.gexf")
-    print("Sister Cities Graph #nodes:", len(s_cities_graph.nodes), " #edges: ", len(s_cities_graph.edges))
-    remove_uncommon_nodes(routes_graph, s_cities_graph, "airline_routes_data/reduced_routes.gexf")
-    print("Routes Graph #nodes:", len(routes_graph.nodes), " #edges: ", len(routes_graph.edges))
+    remove_uncommon_nodes(s_cities_graph, routes_graph, ss_dir_path + "reduced_sister_cities.gexf")
+    remove_uncommon_nodes(routes_graph, s_cities_graph, ar_dir_path + "reduced_routes.gexf")
 
-    # Plotting and saving the reduced graphs
-    Utility.save_plot(nx.readwrite.read_gexf('../data/airline_routes_data/reduced_routes.gexf'),
-                      "airline_routes_data/reduced_routes_plot.png")
-    Utility.save_plot(nx.readwrite.read_gexf('../data/sister_cities_data/reduced_sister_cities.gexf'),
-                      "sister_cities_data/reduced_sister_cities_plot.png")
+    # Plotting the reduced graphs
+    Utility.save_plot(nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf'),
+                      ar_dir_path + "reduced_routes_plot.png")
+    Utility.save_plot(nx.readwrite.read_gexf(ss_dir_path + 'reduced_sister_cities.gexf'),
+                      ss_dir_path + "reduced_sister_cities_plot.png")
 
 
-def remove_uncommon_nodes(graph_1, graph_2, file_name_path):
+def remove_uncommon_nodes(graph_1, graph_2, save_path):
     """
-    # TODO
-    :param graph_1:
-    :param graph_2:
-    :param file_name_path:
-    :return:
+    :param graph_1: graph to reduce
+    :param graph_2: base graph
+    :param save_path: path where to store the reduced graph
     """
     to_remove = []
     for i in tqdm(graph_1.nodes, desc="Removing uncommon nodes"):
@@ -48,7 +45,7 @@ def remove_uncommon_nodes(graph_1, graph_2, file_name_path):
         if not correspondence:
             to_remove.append(i)
     graph_1.remove_nodes_from(to_remove)
-    nx.write_gexf(graph_1, '../data/' + file_name_path)
+    nx.write_gexf(graph_1, save_path)
     return graph_1
 
 

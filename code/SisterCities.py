@@ -2,6 +2,7 @@ from pathlib import Path
 import networkx as nx
 from tqdm import tqdm
 import Utility
+from Utility import ss_dir_path
 
 cities = {}
 sisters = set()
@@ -56,7 +57,7 @@ def build_graph():
     Builds the sister cities graph inserting nodes (cities) and edges (sister bond)
     :return: an instance of the graph
     """
-    query = Path('../data/sister_cities_data/big-sister-cities.sparql').absolute().read_text()
+    query = Path(ss_dir_path + 'big-sister-cities.sparql').absolute().read_text()
     resp = Utility.request(query)
     parse_response(resp)
     G = nx.Graph()
@@ -65,13 +66,13 @@ def build_graph():
         G.add_node(cid, **attr)
     for sister in tqdm(sisters, desc="Adding edges"):
         G.add_edge(sister[0], sister[1])
-    nx.write_gexf(G, '../data/sister_cities_data/sister_cities.gexf')
+    nx.write_gexf(G, ss_dir_path + 'sister_cities.gexf')
     return G
 
 
 def main():
     G = build_graph()
-    Utility.save_plot(G, 'sister_cities_data/complete_sister_cities_plot.png')
+    Utility.save_plot(G, ss_dir_path + 'complete_sister_cities_plot.png')
 
 
 if __name__ == "__main__":

@@ -1,9 +1,8 @@
 ## Midterm Project Report
-- 
+- [Link to the presentation paper] https://github.com/albertoursino/GraphsComparison/blob/main/README.md
 - [Description of the graphs structure]
 - [Nation graphs]
-- [Write something] https://github.com/albertoursino/GraphsComparison
-- 
+- [Link to the repo] https://github.com/albertoursino/GraphsComparison
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwNjc1ODkxXX0=
+eyJoaXN0b3J5IjpbLTEzMzQxNjQ0OTldfQ==
 -->

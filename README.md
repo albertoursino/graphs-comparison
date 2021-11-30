@@ -46,11 +46,12 @@ There are certainly other algorithms that we can come up with but we are going t
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
 
 ## Midterm Project Report
--
--
+- [Description of the graphs structure]
+- [Nation graphs]
+- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQzMzQyOTAsMTQ4Mjc4MTQ2OCwxMT
+eyJoaXN0b3J5IjpbLTE0MjI5OTcxMjUsMTQ4Mjc4MTQ2OCwxMT
 IzNDUwMTQ2LDg3NjQxMzA0NiwtMjkwNjc3MzY4LC0xOTE5ODA4
 NzMsNzUwMjQyNDQ2LDE3NDI1NjczOTMsMTU1NjczNjQ2OCwxOD
 A4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3

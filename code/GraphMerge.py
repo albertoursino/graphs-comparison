@@ -17,36 +17,40 @@ def main():
     except FileNotFoundError:
         routes_graph = AirlineRoutes.build_graph()
 
-    remove_uncommon_nodes(s_cities_graph, routes_graph, ss_dir_path + "reduced_sister_cities.gexf")
-    remove_uncommon_nodes(routes_graph, s_cities_graph, ar_dir_path + "reduced_routes.gexf")
+    reduced_routes_graph = nx.Graph()
+    map_rs = {}
+
+    for s_city, s_attrs in s_cities_graph.copy().nodes(True):
+        found = False
+        for r_city, r_attrs in routes_graph.nodes(True):
+            if (Utility.normalize(s_attrs['label']) == Utility.normalize(r_city)) and \
+                    (s_attrs['country'].lower() == r_attrs['country'].lower()):
+                reduced_routes_graph.add_node(s_city, **s_attrs)
+                map_rs[r_city] = s_city
+                found = True
+                break
+        if not found:
+            s_cities_graph.remove_node(s_city)
+
+    # s_cities_graph is now reduced
+    # let's build the edges of reduced_routes_graph
+
+    for edge in routes_graph.edges(data=True):
+        try:
+            node1 = map_rs[edge[0]]
+            node2 = map_rs[edge[1]]
+        except KeyError:
+            continue
+        reduced_routes_graph.add_edge(node1, node2, weight=edge[2]['weight'])
+
+    nx.write_gexf(reduced_routes_graph, ar_dir_path + "reduced_routes.gexf")
+    nx.write_gexf(s_cities_graph, ss_dir_path + "reduced_sister_cities.gexf")
 
     # Plotting the reduced graphs
-    Utility.save_plot(nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf'),
+    Utility.save_plot(reduced_routes_graph,
                       ar_dir_path + "reduced_routes_plot.png")
-    Utility.save_plot(nx.readwrite.read_gexf(ss_dir_path + 'reduced_sister_cities.gexf'),
+    Utility.save_plot(s_cities_graph,
                       ss_dir_path + "reduced_sister_cities_plot.png")
-
-
-def remove_uncommon_nodes(graph_1, graph_2, save_path):
-    """
-    :param graph_1: graph to reduce
-    :param graph_2: base graph
-    :param save_path: path where to store the reduced graph
-    """
-    to_remove = []
-    for i in tqdm(graph_1.nodes, desc="Removing uncommon nodes"):
-        rc = graph_1.nodes[i]
-        correspondence = False
-        for j in graph_2.nodes:
-            sc = graph_2.nodes[j]
-            if (Utility.remove_diacritics(rc['label']) == Utility.remove_diacritics(sc['label'])) and \
-                    (rc['country'] == sc['country']):
-                correspondence = True
-        if not correspondence:
-            to_remove.append(i)
-    graph_1.remove_nodes_from(to_remove)
-    nx.write_gexf(graph_1, save_path)
-    return graph_1
 
 
 if __name__ == "__main__":

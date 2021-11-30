@@ -57,7 +57,7 @@ def build_graph():
     Builds the sister cities graph inserting nodes (cities) and edges (sister bond)
     :return: an instance of the graph
     """
-    query = Path(ss_dir_path + 'big-sister-cities.sparql').absolute().read_text()
+    query = Path(ss_dir_path + 'sister_cities_query.sparql').absolute().read_text()
     resp = Utility.request(query)
     parse_response(resp)
     G = nx.Graph()

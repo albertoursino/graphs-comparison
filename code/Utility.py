@@ -31,14 +31,14 @@ def create_routes_complete():
     pass
 
 
-def remove_diacritics(string):
+def normalize(string):
     """
     Substitutes diacritics of the input string with normalized Unicode characters
     :param string: the string to be normalized
     :return: normalized string
     """
     nfkd_form = unicodedata2.normalize('NFKD', string)
-    return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)])
+    return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)]).lower()
 
 
 def save_plot(graph, path):

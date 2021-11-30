@@ -17,7 +17,7 @@ The purpose of the project is to analyze **two graphs**:
     
 2.  The second graph depicts a global mapping of all the **airline routes** connecting different cities, weighted with the amount of flights during a certain time lapse. We will probably use the [Tyler Woebkenberg's dataset](https://data.world/tylerudite/airports-airlines-and-routes).
 
-## Intended experiments
+## Intended Experiments
 
 As you may have understood, this is an **application project**: we are going to do some experiments on the two graphs we have presented above, in particular, we're aiming to discover their similarities.
 
@@ -45,11 +45,13 @@ There are certainly other algorithms that we can come up with but we are going t
 - [OpenFlights](https://openflights.org/data.html) + [jpatokal](https://github.com/jpatokal)/**[openflights](https://github.com/jpatokal/openflights)**
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
 
+## Midterm Project Report
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Mjc4MTQ2OCwxMTIzNDUwMTQ2LDg3Nj
-QxMzA0NiwtMjkwNjc3MzY4LC0xOTE5ODA4NzMsNzUwMjQyNDQ2
-LDE3NDI1NjczOTMsMTU1NjczNjQ2OCwxODA4NDQ0MTA1LDI2OD
-EzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3NDksLTgwOTQ2MDUx
-MSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC0yMDg1MDgwMTAzLD
-M1MjU1MzMzMV19
+eyJoaXN0b3J5IjpbOTk2MDAxNCwxNDgyNzgxNDY4LDExMjM0NT
+AxNDYsODc2NDEzMDQ2LC0yOTA2NzczNjgsLTE5MTk4MDg3Myw3
+NTAyNDI0NDYsMTc0MjU2NzM5MywxNTU2NzM2NDY4LDE4MDg0ND
+QxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5LDUzNjY3OTc0OSwt
+ODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNTU5MjA2NzIsLTIwOD
+UwODAxMDMsMzUyNTUzMzMxXX0=
 -->

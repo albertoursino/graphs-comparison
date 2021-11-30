@@ -44,17 +44,11 @@ There are certainly other algorithms that we can come up with but we are going t
 - [Not all paths lead to Rome: Analysing the network of sister cities](https://arxiv.org/abs/1301.6900)
 - [OpenFlights](https://openflights.org/data.html) + [jpatokal](https://github.com/jpatokal)/**[openflights](https://github.com/jpatokal/openflights)**
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
-
-## Midterm Project Report
-- [Description of the graphs structure]
-- [Nation graphs]
-- 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjI5OTcxMjUsMTQ4Mjc4MTQ2OCwxMT
-IzNDUwMTQ2LDg3NjQxMzA0NiwtMjkwNjc3MzY4LC0xOTE5ODA4
-NzMsNzUwMjQyNDQ2LDE3NDI1NjczOTMsMTU1NjczNjQ2OCwxOD
-A4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3OSw1MzY2Nzk3
-NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMjU1OTIwNjcyLC
-0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
+eyJoaXN0b3J5IjpbODUyNzQ2MTYxLDE0ODI3ODE0NjgsMTEyMz
+Q1MDE0Niw4NzY0MTMwNDYsLTI5MDY3NzM2OCwtMTkxOTgwODcz
+LDc1MDI0MjQ0NiwxNzQyNTY3MzkzLDE1NTY3MzY0NjgsMTgwOD
+Q0NDEwNSwyNjgxMzM4NzUsLTExNTAwMTMwNzksNTM2Njc5NzQ5
+LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
+A4NTA4MDEwMywzNTI1NTMzMzFdfQ==
 -->

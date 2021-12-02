@@ -1,9 +1,11 @@
-## Midterm Project Report
+# Midterm Project Report
 In this short paper we are going to present what we have done since now.
 In order to clarify the context for the reader, we give some useful links:
 
  -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
  - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
+
+## What we have done
 
 **Graphs structure**:
 
@@ -27,7 +29,7 @@ During the start of the project we encountered some small issues with the datase
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzMjcxMzc5LDIxMDI2NzQ3OTQsLTIwNz
-A0NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYy
-NjA0XX0=
+eyJoaXN0b3J5IjpbLTIwNTc3MDg5NDAsMjEwMjY3NDc5NCwtMj
+A3MDQ3NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2
+NjI2MDRdfQ==
 -->

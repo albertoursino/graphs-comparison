@@ -5,7 +5,7 @@ In order to clarify the context for the reader, we give some useful links:
  -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
  - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
 
-## What we have done
+## Work
 
 **Graphs structure**:
 
@@ -29,7 +29,7 @@ During the start of the project we encountered some small issues with the datase
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc3MDg5NDAsMjEwMjY3NDc5NCwtMj
-A3MDQ3NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2
-NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbMTMwNjM2NDQyOSwyMTAyNjc0Nzk0LC0yMD
+cwNDc0MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2
+MjYwNF19
 -->

@@ -2,18 +2,18 @@
 In this short paper we are going to present what we have done since now.
 In order to clarify the context for the reader, we give some useful links:
 
- -  [Original project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
- - [GitHub project pepository](https://github.com/albertoursino/GraphsComparison).
+ -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
+ - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
 
-## Graphs structure
+**Graphs structure**:
 
-## Nations graphs
+**Nations graphs**:
 
-## Numerical results
+**Numerical results**:
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ3MzY4NDEsMTUxODEwMTc3NCwtMT
-c0NTI1ODk1MywxNjY1NjYyNjA0XX0=
+eyJoaXN0b3J5IjpbMTE1NDA2MjAyNCwxNTE4MTAxNzc0LC0xNz
+Q1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
 -->

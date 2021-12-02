@@ -26,12 +26,12 @@ We introduced a new experiement, that is the one relative to the *nations graphs
 
 During the start of the project we encountered some small issues with the datasets: some city names are written is different ways in the two datasets.
 For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
-This problem don't let us 
+Thi issue does not allow us to compare the two graphs directly. For this, we had to implement a sort of **normalization** to the data and thus create "reduced" graphs; reduced because we inevitably lost some nodes. Of course this part can be optimized in the future but for now let's go ahead with the project with what we have.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNDMzNjE5LDIxMDI2NzQ3OTQsLTIwNz
-A0NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYy
-NjA0XX0=
+eyJoaXN0b3J5IjpbNjY0NTY0NDAsMjEwMjY3NDc5NCwtMjA3MD
+Q3NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2
+MDRdfQ==
 -->

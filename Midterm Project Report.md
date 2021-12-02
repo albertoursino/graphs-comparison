@@ -6,14 +6,17 @@ In order to clarify the context for the reader, we give some useful links:
  - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
 
 **Graphs structure**:
+[...]
 
 **Nations graphs**:
+[...]
 
 **Numerical results**:
+[...]
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NDA2MjAyNCwxNTE4MTAxNzc0LC0xNz
-Q1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbNDc5MTAwNDE0LDE1MTgxMDE3NzQsLTE3ND
+UyNTg5NTMsMTY2NTY2MjYwNF19
 -->

@@ -24,14 +24,14 @@ The main objective of this project is not changed: we're aiming to finding simil
 
 We introduced a new experiment, that is the one relative to the *nations graphs*.
 
-During the start of the project we encountered some small issues with the datasets: some city names are written is different ways in the two datasets.
+During the start of the project we encountered some small issues with the datasets: some city names are written is different ways.
 For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
 Thi issue does not allow us to compare the two graphs directly. For this, we had to implement a sort of **normalization** to the data and thus create "reduced" graphs; "reduced" because we inevitably lost some nodes. Of course this part can be optimized in the future.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzYzMzM1NjYsMjEwMjY3NDc5NCwtMj
-A3MDQ3NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2
-NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbLTUyNjAzOTA5LDIxMDI2NzQ3OTQsLTIwNz
+A0NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYy
+NjA0XX0=
 -->

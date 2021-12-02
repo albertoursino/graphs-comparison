@@ -20,7 +20,7 @@ Here's a detailed description of the current graphs we are working on:
    The reason behind this choice is the will to better capture eventual relationships between twinning relationships and air traffic, adopting a more macroscopic perspective.
   
 
-### **Numerical results**:
+### Numerical results:
 
 [...]
 

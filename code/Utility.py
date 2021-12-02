@@ -31,13 +31,14 @@ def create_routes_complete():
     pass
 
 
-def normalize(string):
+def normalize(string: str):
     """
     Substitutes diacritics of the input string with normalized Unicode characters
     :param string: the string to be normalized
     :return: normalized string
     """
-    nfkd_form = unicodedata2.normalize('NFKD', string)
+
+    nfkd_form = unicodedata2.normalize('NFKD', string.replace("-", " "))
     return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)]).lower()
 
 

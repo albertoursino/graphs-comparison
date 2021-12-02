@@ -20,7 +20,7 @@ In order to clarify the context for the reader, we give some useful links:
 [...]
 
 ## **Notes**
-The main objective of this project is not changed: we're aiming to finding similiraties between this two graphs.
+The main objective of this project is not changed: we're aiming to finding similiraties between the "sister citi.
 
 We introduced a new experiement, that is the one relative to the *nations graphs*.
 
@@ -31,7 +31,7 @@ Thi issue does not allow us to compare the two graphs directly. For this, we had
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTY0NjE5MCwyMTAyNjc0Nzk0LC0yMD
+eyJoaXN0b3J5IjpbLTM5MjQ4OTA3NywyMTAyNjc0Nzk0LC0yMD
 cwNDc0MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2
 MjYwNF19
 -->

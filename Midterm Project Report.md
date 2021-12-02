@@ -20,11 +20,11 @@ In order to clarify the context for the reader, we give some useful links:
 **Considerations**:
 The main objective of this project is not changed: we're aiming to finding similiraties between this two graphs.
 We introduced a new experiement, that is the one relative to the *nations graphs*.
-During the start of the project we encountered some 
+During the start of the project we encountered some small issues with the datasets: some entries (in particular the ct
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzU4NTgzMjAsLTIwNzA0NzQzMjQsMT
-UxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNjA0XX0=
+eyJoaXN0b3J5IjpbMTc5MzQ4MTgxNSwtMjA3MDQ3NDMyNCwxNT
+E4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
 -->

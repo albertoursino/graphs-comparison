@@ -20,14 +20,12 @@ In order to clarify the context for the reader, we give some useful links:
 [...]
 
 ## **Notes**
-The main objective of this project is not changed: we're aiming to find similarities between the "sister cities" and "airline routes" graphs.
+The main objective of this project has not changed: we're aiming to find similarities between the "sister cities" graph and the "airline routes" graph.
 
-During the start of the project we encountered some small issues with the datasets: some city names are written in different ways.
-For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
-Thi issue does not allow us to compare the two graphs directly. For this, we had to implement a sort of **normalization** to the data and thus create "reduced" graphs; "reduced" because we inevitably lost some nodes. Of course this part can be optimized in the future.
+During the start of the project we encountered some small issues with the datasets: 
+the first dataset is the result of a query to Wikidata Query Service, and consists of cities all over the world along with their sister cities (we filtered this set by selecting cities with population > 10000); each city is an entity identified by a code in Wikidata, which can be used to retrieve information about the city, such as its label (i.e. its real name in English, for instance London), its country, its population, etc. The other dataset comes from Openflights (https://github.com/jpatokal/openflights), and represents some common airline routes among cities in the world, which are identified by their names (while airports by their airpoirt codes). Since this dataset does not use the same scheme as the previous one, there were a series of issues, which in part have not been solved yet: we cannot compare cities using Wikidata id, so we relied just on names, which however sometimes are not always equal, due to different encodings, like `Tel Aviv` and `Tel-Aviv` or `San José` and `San Jose`. When we retained common cities, in order to compare the two graphs, we took into account these different encodings, by lower casing the strings and stripping the weird accents. Another problem of these two datasets is that common nodes are very few (~ 800) with respect to the total number of cities (~ 4500) or airports (~ 3000) (due to the fact that cities with airports do not appear very often in the first dataset).
 
-Nice images of the plotted graphs can be found in the above links.
-
+Some nice pictures of the two datasets on a world map can be found on the repository (link above).
 
 
 <!--stackedit_data:

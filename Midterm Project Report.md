@@ -16,6 +16,7 @@ Here's a detailed description of the current graphs we are working on:
 4) Countries graphs: in addition to the previously described graphs, we decided to integrate an alternative graph structure in our analysis. For both the twinning-relationships graph and the airline routes graph we built a corresponding one as follows:
    - the vertices are representative of the countries around the world;
    - every edge between two countries is weighted with the number of occurrencies of edges between the two locations in the original graph.
+
 The reason behind this choice is the will to better capture eventual relationships between twinning relationships and air traffic, adopting a more macroscopic perspective.
   
 

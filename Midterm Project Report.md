@@ -25,12 +25,13 @@ The main objective of this project is not changed: we're aiming to finding simil
 We introduced a new experiement, that is the one relative to the *nations graphs*.
 
 During the start of the project we encountered some small issues with the datasets: some city names are written is different ways in the two datasets.
-For esample we can find `Tel Aviv` in the sister cities dataset, 
+For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
+This is a problem due to the different 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NTY4OTc1NywyMTAyNjc0Nzk0LC0yMD
-cwNDc0MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2
-MjYwNF19
+eyJoaXN0b3J5IjpbLTEzNzYyNDEwMDgsMjEwMjY3NDc5NCwtMj
+A3MDQ3NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2
+NjI2MDRdfQ==
 -->

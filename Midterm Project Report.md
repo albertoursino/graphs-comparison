@@ -7,7 +7,7 @@ In order to clarify the context for the reader, we give some useful links:
 
 ## Updates
 
-**Graphs structure**:
+### Graphs structure ###:
 
 Here's a detailed description of the current graphs we are working on:
 1) The airline routes graph. Each node represents an airport in the world: it includes the city name, the geographic coordinates of the airport and the country. Two nodes are linked if there exists a route between the airports.

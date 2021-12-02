@@ -11,7 +11,7 @@ In order to clarify the context for the reader, we give some useful links:
 
 [...]
 
-**Nations graphs**:
+**Countries graphs**:
 
 [...]
 
@@ -20,11 +20,11 @@ In order to clarify the context for the reader, we give some useful links:
 [...]
 
 ## **Notes**
-The main objective of this project is not changed: we're aiming to finding similiraties between the "sister cities" and "airline routes" graphs.
+The main objective of this project is not changed: we're aiming to find similarities between the "sister cities" and "airline routes" graphs.
 
-We introduced a new experiment, that is the one relative to the *nations graphs*.
+We introduced a new experiment, that is the one relative to the *countries graphs*.
 
-During the start of the project we encountered some small issues with the datasets: some city names are written is different ways.
+During the start of the project we encountered some small issues with the datasets: some city names are written in different ways.
 For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
 Thi issue does not allow us to compare the two graphs directly. For this, we had to implement a sort of **normalization** to the data and thus create "reduced" graphs; "reduced" because we inevitably lost some nodes. Of course this part can be optimized in the future.
 

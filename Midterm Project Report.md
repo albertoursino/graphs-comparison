@@ -1,5 +1,5 @@
 # Midterm Project Report
-In this short paper we are going to present what we have done since now.
+In this short paper we are going to present what we have done up to now.
 In order to clarify the context for the reader, we give some useful links:
 
  -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);

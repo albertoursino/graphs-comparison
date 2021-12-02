@@ -10,7 +10,7 @@ In order to clarify the context for the reader, we give some useful links:
 ### Graphs structure:
 
 Here's a detailed description of the current graphs we are working on:
-1) The airline routes graph. Each node represents an airport in the world: it includes the city name, the geographic coordinates of the airport and the country. Two nodes are linked if there exists a route between the airports.
+1) The airline routes graph. Each node represents an airport in the world: it includes the city name, the geographic coordinates of the airport and the country. Two nodes are linked if there exists a route between the airports. Each edge is weighted proportionally to the air traffic between the incident nodes.
 2) The twinning-relationships graph. Each node represents a city in the world: it includes the city name, the geographic coordinates, the population and the country. Two nodes are linked if they are twinned.
 3) A reduced version for each graph 1) and 2): only nodes appearing on both graphs are kept, the others are discarded (i.e. each twinned city must have an airport and viceversa)
 4) Countries graphs. In addition to the previously described graphs, we decided to integrate an alternative graph structure in our analysis. For both the twinning-relationships graph and the airline routes graph we built a corresponding one as follows:

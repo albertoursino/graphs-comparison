@@ -18,11 +18,13 @@ In order to clarify the context for the reader, we give some useful links:
 [...]
 
 **Considerations**:
-The objective of this project is not changed: it is always finding similiraties between this two graphs.
+The main objective of this project is not changed: we're aiming to finding similiraties between this two graphs.
+We introduced a new experiement, that is the one relative to the *nations graphs*.
+During the start of the project we encountered some 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTYxMDA0NTMsLTIwNzA0NzQzMjQsMT
+eyJoaXN0b3J5IjpbLTEzMzU4NTgzMjAsLTIwNzA0NzQzMjQsMT
 UxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNjA0XX0=
 -->

@@ -17,11 +17,12 @@ In order to clarify the context for the reader, we give some useful links:
 
 [...]
 
-
+**Considerations**:
+The objective of this project is not changed: it is always finding similiraties between this two graphs.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MzY5NDk2OCwtMjA3MDQ3NDMyNCwxNT
-E4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbLTE3NTYxMDA0NTMsLTIwNzA0NzQzMjQsMT
+UxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNjA0XX0=
 -->

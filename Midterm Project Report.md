@@ -5,7 +5,7 @@ In order to clarify the context for the reader, we give some useful links:
  -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
  - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
 
-## Project Updates
+## Updates
 
 **Graphs structure**:
 
@@ -24,12 +24,13 @@ The main objective of this project is not changed: we're aiming to finding simil
 
 We introduced a new experiement, that is the one relative to the *nations graphs*.
 
-During the start of the project we encountered some small issues with the datasets: some entries (in particular for city names) are written is different ways in the two datasets.
+During the start of the project we encountered some small issues with the datasets: some city names are written is different ways in the two datasets.
+For esample we can find `Tel Aviv` in the sister cities dataset, 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzk0MzA1OSwyMTAyNjc0Nzk0LC0yMD
+eyJoaXN0b3J5IjpbLTc3NTY4OTc1NywyMTAyNjc0Nzk0LC0yMD
 cwNDc0MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2
 MjYwNF19
 -->

@@ -28,10 +28,12 @@ During the start of the project we encountered some small issues with the datase
 For example we find `Tel Aviv` in the sister cities dataset and `Tel-aviv` in the airline routes one.
 Thi issue does not allow us to compare the two graphs directly. For this, we had to implement a sort of **normalization** to the data and thus create "reduced" graphs; "reduced" because we inevitably lost some nodes. Of course this part can be optimized in the future.
 
+Nice images of the plotted graphs can be found in the above links.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjAzOTA5LDIxMDI2NzQ3OTQsLTIwNz
-A0NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYy
-NjA0XX0=
+eyJoaXN0b3J5IjpbLTk5NjAzMDEwNiwyMTAyNjc0Nzk0LC0yMD
+cwNDc0MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2
+MjYwNF19
 -->

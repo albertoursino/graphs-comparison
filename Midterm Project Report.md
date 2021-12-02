@@ -17,14 +17,17 @@ In order to clarify the context for the reader, we give some useful links:
 
 [...]
 
-**Considerations**:
+## **Notes**
 The main objective of this project is not changed: we're aiming to finding similiraties between this two graphs.
+
 We introduced a new experiement, that is the one relative to the *nations graphs*.
-During the start of the project we encountered some small issues with the datasets: some entries (in particular for city names) are writtin is diffierent ways in the two datasets.
+
+During the start of the project we encountered some small issues with the datasets: some entries (in particular for city names) are written is different ways in the two datasets.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjY3NDc5NCwtMjA3MDQ3NDMyNCwxNT
-E4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbNDgzMjcxMzc5LDIxMDI2NzQ3OTQsLTIwNz
+A0NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYy
+NjA0XX0=
 -->

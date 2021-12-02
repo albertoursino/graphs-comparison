@@ -17,7 +17,8 @@ Here's a detailed description of the current graphs we are working on:
    - the vertices are representative of the countries around the world
    - every edge between two countries is weighted with the number of occurrencies of edges between the two locations in the original graph  
    
-   The reason behind this choice is the will to better capture eventual relationships between twinning relationships and air traffic, adopting a more macroscopic perspective.
+   The reason behind this choice is the will to better capture eventual relationships between twinning relationships and air traffic, adopting a more macroscopic perspective. Even if this option causes us to lose informations about links within a single country, it gives us the advantage of studying the case on the international level, allowing to overlook all those cases in which the air routes graph fails to
+represent people's traveling between two locations (e.g. when a traveler leaves from Amsterdam and lands at the Venice airport in order to reach Verona as the final destination by other means).
   
 
 ### Numerical results:

@@ -26,12 +26,12 @@ the first dataset is the result of a query to Wikidata Query Service, and consis
 
 Some nice pictures of the two datasets on a world map can be found on the repository (link above).
 
-Perhaps in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: we think it is worth to do this experiment 
+Perhaps in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: we think it could better express the relationship between 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQxODQzMDYsLTEzNjk3NjM1MzQsMT
-AxOTU3NDUwOSwtOTk2MDMwMTA2LDIxMDI2NzQ3OTQsLTIwNzA0
-NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNj
-A0XX0=
+eyJoaXN0b3J5IjpbLTU5NTYzNDE4NywtMTM2OTc2MzUzNCwxMD
+E5NTc0NTA5LC05OTYwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3
+NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MD
+RdfQ==
 -->

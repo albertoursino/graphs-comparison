@@ -59,9 +59,12 @@ def save_plot(graph, path):
     os.environ["CARTOPY_USER_BACKGROUNDS"] = "../data"
     ax.background_img(name='ETOPO', resolution='high')
 
-    nx.draw_networkx_nodes(graph, positions, node_size=0.03, nodelist=graph.nodes, node_shape="o", linewidths=0,
+    nx.draw_networkx_nodes(graph, positions, node_size=0.01, nodelist=graph.nodes, node_shape="o", linewidths=0,
                            node_color="black", alpha=0.9)
-    nx.draw_networkx_edges(graph, positions, edgelist=graph.edges, width=0.06, edge_color="red")
+    nx.draw_networkx_edges(graph, positions, edgelist=graph.edges, width=0.01, edge_color="red")
 
-    plt.savefig(path, format='png', dpi=800)
+    ax.axis('tight')
+    ax.axis('off')
+    fig.set_size_inches(2.4, 1.35)
+    plt.savefig(path, format='png', dpi=1200)
     plt.show()

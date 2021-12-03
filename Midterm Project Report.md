@@ -26,14 +26,12 @@ the first dataset is the result of a query to Wikidata Query Service, and consis
 
 Some nice pictures of the two datasets on a world map can be found on the repository (link above).
 
-Perhaps in future simulations we might consider a new graph, which takes into account movements across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database.
-
-EXPLAIN WHY WE SHOULD CONSIDER A DIFFERENT GRAPH, WHICH TAKES INTO ACCOUNT MOVEMENTS (city close to airport X which is bonded to city close to airport Y and there exists a route between X and Y)
+Perhaps in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTAwOTQxNCwtMTM2OTc2MzUzNCwxMD
-E5NTc0NTA5LC05OTYwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3
-NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MD
-RdfQ==
+eyJoaXN0b3J5IjpbNDcyOTE3Nzg2LC0xMzY5NzYzNTM0LDEwMT
+k1NzQ1MDksLTk5NjAzMDEwNiwyMTAyNjc0Nzk0LC0yMDcwNDc0
+MzI0LDE1MTgxMDE3NzQsLTE3NDUyNTg5NTMsMTY2NTY2MjYwNF
+19
 -->

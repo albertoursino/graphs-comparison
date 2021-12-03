@@ -1,7 +1,7 @@
 
 # Find similarities between two particular graphs
 
-![Airline Routes](https://github.com/albertoursino/GraphsComparison/blob/Airline-Routes/data/airline_routes_data/plotted_graph.png?raw=true)![Sister Cities](https://github.com/albertoursino/GraphsComparison/blob/Sister-Cities/data/sister_cities_data/plotted_graph.png?raw=true)
+![Airline Routes](https://github.com/albertoursino/GraphsComparison/blob/main/data/airline_routes_data/complete_routes_plot.png?raw=true)![Sister Cities](https://github.com/albertoursino/GraphsComparison/blob/main/data/sister_cities_data/complete_sister_cities_plot.png?raw=true)
 This is the presentation paper of a *Learning From Network* course's project.
 In the following sections we will present the project idea, the results we are hoping to obtain and finally the material we currently have and some details of our way to procede.
 
@@ -28,7 +28,7 @@ As you may have understood, this is an **application project**: we are going to 
 - ***Clustering***: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*maybe others...*]
 
-**Libraries**: NetworkX, Pandas, Numpy, Matplotlib, [...]
+**Libraries**: NetworkX, Pandas, Numpy, Matplotlib, cartopy, 
 
 **Machine for experiments**: We have a computer with the following hardware: Ryzen 2600x, RTX 3060, 16GB of RAM and >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 
@@ -45,10 +45,10 @@ There are certainly other algorithms that we can come up with but we are going t
 - [OpenFlights](https://openflights.org/data.html) + [jpatokal](https://github.com/jpatokal)/**[openflights](https://github.com/jpatokal/openflights)**
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNzQ2MTYxLDE0ODI3ODE0NjgsMTEyMz
-Q1MDE0Niw4NzY0MTMwNDYsLTI5MDY3NzM2OCwtMTkxOTgwODcz
-LDc1MDI0MjQ0NiwxNzQyNTY3MzkzLDE1NTY3MzY0NjgsMTgwOD
-Q0NDEwNSwyNjgxMzM4NzUsLTExNTAwMTMwNzksNTM2Njc5NzQ5
-LC04MDk0NjA1MTEsLTIxMTk4NTIzMzUsMTI1NTkyMDY3MiwtMj
-A4NTA4MDEwMywzNTI1NTMzMzFdfQ==
+eyJoaXN0b3J5IjpbMTcwMjA1MDA2LDg1Mjc0NjE2MSwxNDgyNz
+gxNDY4LDExMjM0NTAxNDYsODc2NDEzMDQ2LC0yOTA2NzczNjgs
+LTE5MTk4MDg3Myw3NTAyNDI0NDYsMTc0MjU2NzM5MywxNTU2Nz
+M2NDY4LDE4MDg0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5
+LDUzNjY3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNT
+U5MjA2NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
 -->

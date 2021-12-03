@@ -28,7 +28,7 @@ As you may have understood, this is an **application project**: we are going to 
 - ***Clustering***: compute clusters on both graphs and compare them in order to find some similar clusters.
 - [*maybe others...*]
 
-**Libraries**: NetworkX, Pandas, Numpy, Matplotlib, cartopy, 
+**Libraries**: networkx, matplotlib, cartopy, csv, requests, unicodedata2
 
 **Machine for experiments**: We have a computer with the following hardware: Ryzen 2600x, RTX 3060, 16GB of RAM and >100GB of disk space. We will probably run the code on the [IntelliJ IDEA](https://www.jetbrains.com/idea/) environment.
 
@@ -45,10 +45,10 @@ There are certainly other algorithms that we can come up with but we are going t
 - [OpenFlights](https://openflights.org/data.html) + [jpatokal](https://github.com/jpatokal)/**[openflights](https://github.com/jpatokal/openflights)**
 - [yaph](https://github.com/yaph)/**[big-sister-cities](https://github.com/yaph/big-sister-cities)**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjA1MDA2LDg1Mjc0NjE2MSwxNDgyNz
-gxNDY4LDExMjM0NTAxNDYsODc2NDEzMDQ2LC0yOTA2NzczNjgs
-LTE5MTk4MDg3Myw3NTAyNDI0NDYsMTc0MjU2NzM5MywxNTU2Nz
-M2NDY4LDE4MDg0NDQxMDUsMjY4MTMzODc1LC0xMTUwMDEzMDc5
-LDUzNjY3OTc0OSwtODA5NDYwNTExLC0yMTE5ODUyMzM1LDEyNT
-U5MjA2NzIsLTIwODUwODAxMDMsMzUyNTUzMzMxXX0=
+eyJoaXN0b3J5IjpbMTczNjE2OTA1OSw4NTI3NDYxNjEsMTQ4Mj
+c4MTQ2OCwxMTIzNDUwMTQ2LDg3NjQxMzA0NiwtMjkwNjc3MzY4
+LC0xOTE5ODA4NzMsNzUwMjQyNDQ2LDE3NDI1NjczOTMsMTU1Nj
+czNjQ2OCwxODA4NDQ0MTA1LDI2ODEzMzg3NSwtMTE1MDAxMzA3
+OSw1MzY2Nzk3NDksLTgwOTQ2MDUxMSwtMjExOTg1MjMzNSwxMj
+U1OTIwNjcyLC0yMDg1MDgwMTAzLDM1MjU1MzMzMV19
 -->

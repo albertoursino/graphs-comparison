@@ -5,7 +5,7 @@ In order to clarify the context for the reader, we give some useful links:
  -  [Project presentation paper](https://github.com/albertoursino/GraphsComparison/blob/main/README.md);
  - [GitHub project repository](https://github.com/albertoursino/GraphsComparison).
 
-Graphs structure:
+## Graphs structure
 
 Here's a detailed description of the current graphs we are working on:
 1) The airline routes graph. Each node represents an airport in the world: it includes the city name, the geographic coordinates of the airport and the country. Two nodes are linked if there exists a route between the airports. Each edge is weighted proportionally to the air traffic between the incident nodes.
@@ -18,7 +18,7 @@ Here's a detailed description of the current graphs we are working on:
 The reason behind this choice is the will to better capture eventual relationships between twinning relationships and air traffic, adopting a more macroscopic perspective. Even if this option causes us to lose informations about links within a single country, it gives us the advantage of studying the case on the international level, allowing to overlook all those cases in which the air routes graph fails to
 represent people's traveling between two locations (e.g. when a traveler leaves from Amsterdam and lands at the Venice airport in order to reach Verona as the final destination by other means).
 
-## **Notes**
+## Notes
 The main objective of this project has not changed: we're aiming to find similarities between the "sister cities" graph and the "airline routes" graph.
 
 During the start of the project we encountered some small issues with the datasets: 
@@ -28,7 +28,7 @@ Some nice pictures of the two datasets on a world map can be found on the reposi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIyODkzMiwxMDE5NTc0NTA5LC05OT
-YwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3NDMyNCwxNTE4MTAx
-Nzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MDRdfQ==
+eyJoaXN0b3J5IjpbLTEzNjk3NjM1MzQsMTAxOTU3NDUwOSwtOT
+k2MDMwMTA2LDIxMDI2NzQ3OTQsLTIwNzA0NzQzMjQsMTUxODEw
+MTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNjA0XX0=
 -->

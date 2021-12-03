@@ -24,10 +24,10 @@ During the start of the project we encountered some small issues with the datase
 
 Some nice pictures of the two datasets on a world map can be found on the repository (link above).
 
-Perhaps in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: we think it could better express the relationship between air traffic and twinning partnerships (as an alte.
+Perhaps (as an alternative or additional approach to the 4th point above) in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: we think it could better express the relationship between air traffic and twinning partnerships.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4ODU4NTc3OSwtMTM2OTc2MzUzNCwxMD
-E5NTc0NTA5LC05OTYwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3
-NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MD
-RdfQ==
+eyJoaXN0b3J5IjpbLTEzMjQ4NDE1MzgsLTEzNjk3NjM1MzQsMT
+AxOTU3NDUwOSwtOTk2MDMwMTA2LDIxMDI2NzQ3OTQsLTIwNzA0
+NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNj
+A0XX0=
 -->

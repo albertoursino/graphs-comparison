@@ -14,7 +14,8 @@ Here's a detailed description of the current graphs we are working on:
 4) Countries graphs. In addition to the previously described graphs, we decided to integrate an alternative graph structure in our analysis. For both the twinning-relationships graph and the airline routes graph we built a corresponding one as follows:
    - the vertices are representative of the countries around the world;
    - every edge between two countries is weighted with the number of occurrencies of edges between the two locations in the original graph.
-The reason behind this choice is the will to better capture eventual relations between twinning relationships and air traffic, adopting a more macroscopic perspective. Even if this option causes us to lose information about links within a single country, it gives us the advantage of studying the case on the international level, allowing to overlook all those cases in which the air routes graph fails to represent people travels between two locations (e.g. when a traveler leaves from Amsterdam and lands at the Venice airport in order to reach Verona as the final destination by other means).
+
+   The reason behind this choice is the will to better capture eventual relations between twinning relationships and air traffic, adopting a more macroscopic perspective. Even if this option causes us to lose information about links within a single country, it gives us the advantage of studying the case on the international level, allowing to overlook all those cases in which the air routes graph fails to represent people travels between two locations (e.g. when a traveler leaves from Amsterdam and lands at the Venice airport in order to reach Verona as the final destination by other means).
 
 ## Notes
 The main objective of this project has not changed: we aim to find similarities between the "sister cities" graph and the "airline routes" graph.
@@ -25,8 +26,8 @@ Some nice pictures of the two datasets on a world map can be found on the reposi
 
 Perhaps in future simulations we might consider a new graph, which takes into account flow of people across sister cities which do not have an airport but are close to airports for which there exists a route between them in the airline routes database: we think it could better express the relationship between air traffic and twinning partnerships.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDU1MzgwOTIsLTEzNjk3NjM1MzQsMT
-AxOTU3NDUwOSwtOTk2MDMwMTA2LDIxMDI2NzQ3OTQsLTIwNzA0
-NzQzMjQsMTUxODEwMTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNj
-A0XX0=
+eyJoaXN0b3J5IjpbMTU3MTQ5NjkzOCwtMTM2OTc2MzUzNCwxMD
+E5NTc0NTA5LC05OTYwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3
+NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MD
+RdfQ==
 -->

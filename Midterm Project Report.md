@@ -26,9 +26,12 @@ the first dataset is the result of a query to Wikidata Query Service, and consis
 
 Some nice pictures of the two datasets on a world map can be found on the repository (link above).
 
+EXPLAIN WHY WE SHOULD CONSIDER A DIFFERENT GRAPH, WHICH TAKES INTO ACCOUNT MOVEMENTS (city close to airport X which is bonded to city close to airport Y and there exists a route between X and Y)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjk3NjM1MzQsMTAxOTU3NDUwOSwtOT
-k2MDMwMTA2LDIxMDI2NzQ3OTQsLTIwNzA0NzQzMjQsMTUxODEw
-MTc3NCwtMTc0NTI1ODk1MywxNjY1NjYyNjA0XX0=
+eyJoaXN0b3J5IjpbMTc2NDgwMjIzMiwtMTM2OTc2MzUzNCwxMD
+E5NTc0NTA5LC05OTYwMzAxMDYsMjEwMjY3NDc5NCwtMjA3MDQ3
+NDMyNCwxNTE4MTAxNzc0LC0xNzQ1MjU4OTUzLDE2NjU2NjI2MD
+RdfQ==
 -->

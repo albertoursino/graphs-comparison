@@ -42,12 +42,14 @@ def normalize(string: str):
     return u"".join([c for c in nfkd_form if not unicodedata2.combining(c)]).lower()
 
 
-def save_plot(graph, path):
+def save_plot(graph, path, graph_name="", num_nodes="", num_edges=""):
     """
-    # TODO
-    :param graph:
-    :param path:
-    :return:
+    This method plots the graph passed as argument and saves the image in the given path.
+    :param graph: Graph to plot
+    :param path: Path where to store the image
+    :param graph_name: Name of the graph (useful for plotting a description)
+    :param num_nodes: Number of graph nodes (useful for plotting a description)
+    :param num_edges: Number of graph edges (useful for plotting a description)
     """
     positions = {}
     for node, d in graph.nodes(data=True):
@@ -66,5 +68,9 @@ def save_plot(graph, path):
     ax.axis('tight')
     ax.axis('off')
     fig.set_size_inches(2.4, 1.35)
+    ax.text(0.01, 0.01, str(graph_name)+"\nn° nodes: "+str(num_nodes)+"\nn° edges: "+str(num_edges),
+            verticalalignment='bottom', horizontalalignment='left',
+            transform=ax.transAxes,
+            color='black', fontsize=1.5)
     plt.savefig(path, format='png', dpi=1200)
     plt.show()

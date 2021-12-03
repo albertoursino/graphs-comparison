@@ -51,7 +51,7 @@ def build_graph():
 
 def main():
     G = build_graph()
-    Utility.save_plot(G, ar_dir_path + 'complete_routes_plot.png')
+    Utility.save_plot(G, ar_dir_path + 'complete_routes_plot.png', "Airline Routes Graph", len(G.nodes), len(G.edges))
 
 
 if __name__ == "__main__":

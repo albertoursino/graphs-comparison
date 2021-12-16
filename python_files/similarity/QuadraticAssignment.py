@@ -6,7 +6,7 @@
 
 import networkx as nx
 import numpy as np
-from ..Utility import ss_dir_path, ar_dir_path
+from python_files.Utility import ss_dir_path, ar_dir_path
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import Measures

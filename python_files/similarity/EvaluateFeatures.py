@@ -1,4 +1,4 @@
-from ..Utility import ss_dir_path, ar_dir_path
+from python_files.Utility import ss_dir_path, ar_dir_path
 import networkx as nx
 import networkx.algorithms as nx_alg
 

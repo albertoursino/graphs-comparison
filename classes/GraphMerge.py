@@ -1,9 +1,9 @@
 from tqdm import tqdm
 import SisterCities
 import AirlineRoutes
-from .. import Utility
+import Utility
 import networkx as nx
-from ..Utility import ss_dir_path, ar_dir_path
+from Utility import ss_dir_path, ar_dir_path
 
 
 def main():

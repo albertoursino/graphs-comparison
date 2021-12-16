@@ -8,8 +8,8 @@ import cartopy.crs as ccrs
 
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
-ss_dir_path = "../data/sister_cities_data/"
-ar_dir_path = "../data/airline_routes_data/"
+ar_dir_path = r"C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\airline_routes_data"
+ss_dir_path = r"C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\sister_cities_data"
 
 
 def coord(point):

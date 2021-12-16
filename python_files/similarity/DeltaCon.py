@@ -44,7 +44,7 @@ def deltacon(graph1, graph2):
 
 
 s_cities_red = nx.readwrite.read_gexf(
-    r'C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\airline_routes_data\reduced_routes.gexf')
-routes_red = nx.readwrite.read_gexf(
     r'C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\sister_cities_data\reduced_sister_cities.gexf')
+routes_red = nx.readwrite.read_gexf(
+    r'C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\airline_routes_data\reduced_routes.gexf')
 print("Graph similarity by DeltaCon = ", deltacon(s_cities_red, routes_red))

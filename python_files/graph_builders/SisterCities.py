@@ -1,8 +1,8 @@
 from pathlib import Path
 import networkx as nx
 from tqdm import tqdm
-import Utility
-from Utility import ss_dir_path
+from .. import Utility
+from ..Utility import ss_dir_path
 
 cities = {}
 sisters = set()

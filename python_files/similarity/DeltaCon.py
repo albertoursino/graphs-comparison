@@ -28,11 +28,11 @@ def deltacon(graph1, graph2):
     D1 = np.diag(degrees_graph1)
     D2 = np.diag(degrees_graph2)
 
-    epsilon = 1 / (1 + max(D1.max(), D2.max()))
-    print("Epsilon = ", epsilon)
+    epsilon1 = 1 / (1 + D1.max())
+    epsilon2 = 1 / (1 + D2.max())
 
-    S1 = pow(I + pow(epsilon, 2) * D1 - epsilon * A1, -1)
-    S2 = pow(I + pow(epsilon, 2) * D2 - epsilon * A2, -1)
+    S1 = pow(I + pow(epsilon1, 2) * D1 - epsilon1 * A1, -1)
+    S2 = pow(I + pow(epsilon2, 2) * D2 - epsilon2 * A2, -1)
 
     d = 0
     for i in range(len(node_list)):

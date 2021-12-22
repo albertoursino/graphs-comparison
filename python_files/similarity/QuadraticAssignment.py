@@ -9,7 +9,7 @@ import numpy as np
 from python_files.Utility import ss_dir_path, ar_dir_path
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-import Measures
+import distances
 
 
 # Permute rows and columns (in a similar way) of a matrix
@@ -24,7 +24,7 @@ def random_permute(mat: np.matrix):
 def monte_carlo(mat1, mat2, steps):
     res = []
     for i in tqdm(range(steps), desc="monte carlo"):
-        meas = Measures.num_edges_in_common(mat1, random_permute(mat2))
+        meas = distances.num_edges_in_common(mat1, random_permute(mat2))
         res.append(meas)
     return np.array(res)
 
@@ -49,7 +49,7 @@ try:
 
     # np.random.seed(0)  # for reproducibility results
 
-    current_res = Measures.num_edges_in_common(A1, A2)
+    current_res = distances.num_edges_in_common(A1, A2)
     print("Similarity measure: ", current_res)
 
     results = monte_carlo(A1, A2, 20000)

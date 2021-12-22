@@ -1,6 +1,6 @@
 import networkx as nx
 import os
-from python_files.Utility import ss_dir_path, ar_dir_path
+from python_files.Utility import sc_dir_path, ar_dir_path
 
 def extrapolate_country_edges(graph):
     """
@@ -37,9 +37,9 @@ def build_nations_graph(edge_dict):
 def main():
     # Builds nations graph for sister cities
     edge_dict = extrapolate_country_edges(
-        nx.readwrite.read_gexf(ss_dir_path + 'reduced_sister_cities.gexf'))
+        nx.readwrite.read_gexf(sc_dir_path + 'reduced_sister_cities.gexf'))
     G = build_nations_graph(edge_dict)
-    nx.write_gexf(G, ss_dir_path + 'reduced_nations_sister_cities.gexf')
+    nx.write_gexf(G, sc_dir_path + 'reduced_nations_sister_cities.gexf')
 
     # Builds nations graph for airline routes
     edge_dict = extrapolate_country_edges(

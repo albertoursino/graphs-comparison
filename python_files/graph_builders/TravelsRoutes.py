@@ -1,6 +1,6 @@
 import networkx as nx
 import geopy.distance as gpd
-from python_files.Utility import ss_dir_path, ar_dir_path, normalize
+from python_files.Utility import sc_dir_path, ar_dir_path, normalize
 
 def is_node_in_graph(node, node_attrs, nodes_list):
     """
@@ -53,5 +53,5 @@ def build_travels_graph(air_routes_graph, sister_cities_graph):
 #air_routes_graph = nx.readwrite.read_gexf(
 #    r'C:\Users\MARANGONI\IdeaProjects\ComparisonBetweenNetworks\data\airline_routes_data\reduced_routes.gexf')
 air_routes_graph = nx.readwrite.read_gexf(ar_dir_path + r'\reduced_routes.gexf')
-sister_cities_graph = nx.readwrite.read_gexf(ss_dir_path + r'\sister_cities.gexf')
+sister_cities_graph = nx.readwrite.read_gexf(sc_dir_path + r'\sister_cities.gexf')
 build_travels_graph(air_routes_graph, sister_cities_graph)

@@ -6,10 +6,10 @@
 
 import networkx as nx
 import numpy as np
-from python_files.Utility import ss_dir_path, ar_dir_path
+from python_files.Utility import sc_dir_path, ar_dir_path
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-import distances
+import Distances
 
 
 # Permute rows and columns (in a similar way) of a matrix
@@ -30,7 +30,7 @@ def monte_carlo(mat1, mat2, steps):
 
 
 try:
-    s_cities_red: nx.Graph = nx.readwrite.read_gexf(ss_dir_path + 'reduced_sister_cities.gexf')
+    s_cities_red: nx.Graph = nx.readwrite.read_gexf(sc_dir_path + 'reduced_sister_cities.gexf')
     routes_red: nx.Graph = nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf')
 
     # these adjacency matrices are sparse, to make them dense we call todense()

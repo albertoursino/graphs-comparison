@@ -19,9 +19,13 @@ def is_node_in_graph(node, node_attrs, nodes_list):
     return found
 
 def build_travels_graph(air_routes_graph, sister_cities_graph):
+    travels_graph = air_routes_graph
     ar_nodes = air_routes_graph.nodes.data()
+    length = len(sister_cities_graph.nodes)
+    iter = 0
     for city, attrs in sister_cities_graph.copy().nodes(True):
-        print("Nuova ITERAZIONE con", attrs['label'])
+        iter += 1
+        print("ITERAZIONE ", iter, " di ", length, " con", attrs['label'])
         if not is_node_in_graph(city, attrs, ar_nodes):
             #Searching for the nearest airport city
             min_dist = float("inf")
@@ -34,11 +38,11 @@ def build_travels_graph(air_routes_graph, sister_cities_graph):
                 if dist < min_dist:
                     min_dist = dist
                     nearest_airport = airport
-            air_routes_graph.add_node(city, **attrs)
-            air_routes_graph.add_edge(city, nearest_airport, weight = 1)
+            travels_graph.add_node(city, **attrs)
+            travels_graph.add_edge(city, nearest_airport, weight = 1)
             print("nodo aggiunto")
-    nx.write_gexf(air_routes_graph, ar_dir_path + "travels_routes.gexf")
-    #nx.write_gexf(air_routes_graph,
+    nx.write_gexf(travels_graph, ar_dir_path + "travels_routes.gexf")
+    #nx.write_gexf(travels_graph,
     #              r'C:\Users\MARANGONI\IdeaProjects\ComparisonBetweenNetworks\data\airline_routes_data\travels_routes.gexf')
 
 

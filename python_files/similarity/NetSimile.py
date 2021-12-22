@@ -7,7 +7,6 @@ import scipy.spatial
 
 
 def net_simile_get_features(graphs: [nx.Graph]):
-    number = len(graphs)
     f = []
     for graph in graphs:
         size = graph.number_of_nodes()
@@ -61,14 +60,14 @@ def net_simile_aggregator(feature_matrices):
     return signatures
 
 
-def net_simile_compare(graphs, normalized_sim=False):
+def net_simile_compare(graphs, normalized_sim=False, dist=scipy.spatial.distance.canberra):
     features = net_simile_get_features(graphs)
     signatures = net_simile_aggregator(features)
     number_graphs = len(graphs)
     similarities = []
     for i in range(number_graphs):
         for j in range(i+1, number_graphs):
-            dist = scipy.spatial.distance.canberra(signatures[i], signatures[j])
+            dist = dist(signatures[i], signatures[j])
             similarities.append((i, j, 1/(1+dist) if normalized_sim else 1/dist))
     return similarities
 
@@ -103,9 +102,8 @@ try:
     # print("--> Closeness centrality: ", cls_centrality)
     # print("--> Clustering centrality: ", clustering_co)
 
-    sim = net_simile_compare([s_cities_red, routes_red], True)
-    sim2 = net_simile_compare([s_cities_red, s_cities_red], True)
-    print(sim, sim2)
+    sim = net_simile_compare([s_cities_red, routes_red], True, dist=scipy.spatial.distance.cosine)
+    print(sim)
 
 except FileNotFoundError:
     exit("No gexf files found! Run GraphMerge first!")

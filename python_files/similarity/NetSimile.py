@@ -77,6 +77,8 @@ try:
     s_cities_red = nx.readwrite.read_gexf(ss_dir_path + 'reduced_sister_cities.gexf')
     routes = nx.readwrite.read_gexf(ar_dir_path + 'routes.gexf')
     routes_red = nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf')
+    sis_countries = nx.readwrite.read_gexf(ss_dir_path + 'reduced_nations_sister_cities.gexf')
+    air_routes_countries = nx.readwrite.read_gexf(ar_dir_path + 'reduced_nations_routes.gexf')
 
     # SISTER CITIES
 
@@ -102,7 +104,7 @@ try:
     # print("--> Closeness centrality: ", cls_centrality)
     # print("--> Clustering centrality: ", clustering_co)
 
-    sim = net_simile_compare([s_cities_red, routes_red], True, dist=scipy.spatial.distance.cosine)
+    sim = net_simile_compare([sis_countries, air_routes_countries], True)
     print(sim)
 
 except FileNotFoundError:

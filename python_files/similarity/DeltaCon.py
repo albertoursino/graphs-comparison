@@ -1,5 +1,6 @@
 import networkx as nx
 from math import sqrt
+from python_files.Utility import ss_dir_path, ar_dir_path
 
 import numpy as np
 from networkx.linalg.graphmatrix import adjacency_matrix
@@ -10,17 +11,15 @@ def deltacon(graph1, graph2):
     Method description here: https://arxiv.org/abs/1304.4657
     :return: a similarity score between graph1 and graph2
     """
-    nodes1_list_sorted = sorted(list(graph1.nodes))
-    nodes2_list_sorted = sorted(list(graph2.nodes))
-    # The two graphs node sets must be the same
-    if nodes1_list_sorted != nodes2_list_sorted:
-        node_list = list(set(nodes1_list_sorted) | set(nodes2_list_sorted))
-    else:
-        node_list = nodes1_list_sorted
+    set1 = set(graph1.nodes)
+    set2 = set(graph2.nodes)
 
-    I = np.identity(len(node_list))
-    A1 = adjacency_matrix(graph1, nodelist=node_list)
-    A2 = adjacency_matrix(graph2, nodelist=node_list)
+    graph2.add_nodes_from(set1 - set2)
+    graph1.add_nodes_from(set2 - set1)
+
+    I = np.identity(graph1.number_of_nodes())
+    A1 = adjacency_matrix(graph1)
+    A2 = adjacency_matrix(graph2)
 
     degrees_graph1 = [val for (node, val) in graph1.degree()]
     degrees_graph2 = [val for (node, val) in graph2.degree()]
@@ -35,8 +34,8 @@ def deltacon(graph1, graph2):
     S2 = pow(I + pow(epsilon2, 2) * D2 - epsilon2 * A2, -1)
 
     d = 0
-    for i in range(len(node_list)):
-        for j in range(len(node_list)):
+    for i in range(graph1.number_of_nodes()):
+        for j in range(graph1.number_of_nodes()):
             d += pow(sqrt(abs(S1[i, j])) - sqrt(abs(S2[i, j])), 2)
     d = sqrt(d)
 
@@ -44,7 +43,7 @@ def deltacon(graph1, graph2):
 
 
 s_cities_red = nx.readwrite.read_gexf(
-    r'C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\sister_cities_data\reduced_sister_cities.gexf')
+    ss_dir_path + 'reduced_nations_sister_cities.gexf')
 routes_red = nx.readwrite.read_gexf(
-    r'C:\Users\letto\Desktop\IntellIj Local Files\Learning-from-Network-Project\data\airline_routes_data\reduced_routes.gexf')
+    ar_dir_path + 'reduced_nations_routes.gexf')
 print("Graph similarity by DeltaCon = ", deltacon(s_cities_red, routes_red))

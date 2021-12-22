@@ -41,7 +41,7 @@ def build_travels_graph(air_routes_graph, sister_cities_graph):
             travels_graph.add_node(city, **attrs)
             travels_graph.add_edge(city, nearest_airport, weight = 1)
             print("nodo aggiunto")
-    nx.write_gexf(travels_graph, ar_dir_path + "travels_routes.gexf")
+    nx.write_gexf(travels_graph, ar_dir_path + r'\travels_routes.gexf')
     #nx.write_gexf(travels_graph,
     #              r'C:\Users\MARANGONI\IdeaProjects\ComparisonBetweenNetworks\data\airline_routes_data\travels_routes.gexf')
 
@@ -52,6 +52,6 @@ def build_travels_graph(air_routes_graph, sister_cities_graph):
 #    r'C:\Users\MARANGONI\IdeaProjects\ComparisonBetweenNetworks\data\sister_cities_data\sister_cities.gexf')
 #air_routes_graph = nx.readwrite.read_gexf(
 #    r'C:\Users\MARANGONI\IdeaProjects\ComparisonBetweenNetworks\data\airline_routes_data\reduced_routes.gexf')
-air_routes_graph = nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf')
-sister_cities_graph = nx.readwrite.read_gexf(ss_dir_path + 'sister_cities.gexf')
+air_routes_graph = nx.readwrite.read_gexf(ar_dir_path + r'\reduced_routes.gexf')
+sister_cities_graph = nx.readwrite.read_gexf(ss_dir_path + r'\sister_cities.gexf')
 build_travels_graph(air_routes_graph, sister_cities_graph)

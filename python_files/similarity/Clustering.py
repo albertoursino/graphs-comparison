@@ -1,4 +1,4 @@
-# ------> You need to install the proper package "pip install python-louvain"
+# ------> You need to install the proper package with "pip install python-louvain"
 import community as community_louvain
 import networkx as nx
 from networkx import edge_betweenness_centrality as ebg

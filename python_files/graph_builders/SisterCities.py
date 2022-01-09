@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import networkx as nx
 from tqdm import tqdm
 
@@ -73,7 +74,8 @@ def build_graph():
 
 def main():
     G = build_graph()
-    Utility.save_plot(G, sc_dir_path + 'complete_sister_cities_plot.png')
+    Utility.save_plot(G, sc_dir_path + 'complete_sister_cities_plot.png', "Sister Cities Graph", len(G.nodes),
+                      len(G.edges))
 
 
 if __name__ == "__main__":

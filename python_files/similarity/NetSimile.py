@@ -1,9 +1,9 @@
-from python_files.Utility import sc_dir_path, ar_dir_path
 import networkx as nx
-import networkx.algorithms as nx_alg
 import numpy as np
-import scipy.stats
 import scipy.spatial
+import scipy.stats
+
+from python_files.Utility import sc_dir_path, ar_dir_path
 
 
 def net_simile_get_features(graphs: [nx.Graph]):
@@ -66,9 +66,9 @@ def net_simile_compare(graphs, normalized_sim=False, dist=scipy.spatial.distance
     number_graphs = len(graphs)
     similarities = []
     for i in range(number_graphs):
-        for j in range(i+1, number_graphs):
+        for j in range(i + 1, number_graphs):
             dist = dist(signatures[i], signatures[j])
-            similarities.append((i, j, 1/(1+dist) if normalized_sim else 1/dist))
+            similarities.append((i, j, 1 / (1 + dist) if normalized_sim else 1 / dist))
     return similarities
 
 

@@ -1,11 +1,11 @@
-import re
-import requests
 import os
-import sys
-import unicodedata2
+import re
+
+import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import networkx as nx
-import cartopy.crs as ccrs
+import requests
+import unicodedata2
 
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
@@ -59,7 +59,8 @@ def save_plot(graph, path, graph_name="", num_nodes="", num_edges=""):
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
 
-    os.environ["CARTOPY_USER_BACKGROUNDS"] = "../data"
+    os.environ["CARTOPY_USER_BACKGROUNDS"] = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..",
+                                                          "data" + os.sep)
     ax.background_img(name='ETOPO', resolution='high')
 
     nx.draw_networkx_nodes(graph, positions, node_size=0.01, nodelist=graph.nodes, node_shape="o", linewidths=0,
@@ -69,7 +70,7 @@ def save_plot(graph, path, graph_name="", num_nodes="", num_edges=""):
     ax.axis('tight')
     ax.axis('off')
     fig.set_size_inches(2.4, 1.35)
-    ax.text(0.01, 0.01, str(graph_name)+"\nn° nodes: "+str(num_nodes)+"\nn° edges: "+str(num_edges),
+    ax.text(0.01, 0.01, str(graph_name) + "\nn° nodes: " + str(num_nodes) + "\nn° edges: " + str(num_edges),
             verticalalignment='bottom', horizontalalignment='left',
             transform=ax.transAxes,
             color='black', fontsize=1.5)

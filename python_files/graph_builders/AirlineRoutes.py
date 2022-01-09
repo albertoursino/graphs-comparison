@@ -1,8 +1,9 @@
 import networkx as nx
 from tqdm import tqdm
 import csv
-from .. import Utility
-from ..Utility import ar_dir_path
+
+from python_files import Utility
+from python_files.Utility import ar_dir_path
 
 
 def build_graph():

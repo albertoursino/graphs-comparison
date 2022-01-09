@@ -1,8 +1,5 @@
-import networkx as nx
-from math import sqrt
-from python_files.Utility import sc_dir_path, ar_dir_path
-
 import numpy as np
+from math import sqrt
 from networkx.linalg.graphmatrix import adjacency_matrix
 
 
@@ -40,10 +37,3 @@ def deltacon(graph1, graph2):
     d = sqrt(d)
 
     return 1 / (1 + d)
-
-
-s_cities_red = nx.readwrite.read_gexf(
-    sc_dir_path + 'reduced_nations_sister_cities.gexf')
-routes_red = nx.readwrite.read_gexf(
-    ar_dir_path + 'reduced_nations_routes.gexf')
-print("Graph similarity by DeltaCon = ", deltacon(s_cities_red, routes_red))

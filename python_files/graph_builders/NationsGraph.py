@@ -1,6 +1,7 @@
 import networkx as nx
-import os
+
 from python_files.Utility import sc_dir_path, ar_dir_path
+
 
 def extrapolate_country_edges(graph):
     """

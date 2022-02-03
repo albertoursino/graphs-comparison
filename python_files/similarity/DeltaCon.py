@@ -1,6 +1,9 @@
+import networkx as nx
 import numpy as np
 from math import sqrt
 from networkx.linalg.graphmatrix import adjacency_matrix
+
+from python_files.Utility import sc_dir_path, ar_dir_path
 
 
 def deltacon(graph1, graph2):
@@ -37,3 +40,11 @@ def deltacon(graph1, graph2):
     d = sqrt(d)
 
     return 1 / (1 + d)
+
+
+r_sc = nx.readwrite.read_gexf(sc_dir_path + 'reduced_sister_cities.gexf')
+r_ar = nx.readwrite.read_gexf(ar_dir_path + 'reduced_routes.gexf')
+c_r_sc = nx.readwrite.read_gexf(sc_dir_path + 'reduced_nations_sister_cities.gexf')
+c_r_ar = nx.readwrite.read_gexf(ar_dir_path + 'reduced_nations_routes.gexf')
+print("DeltaCon score for reduced graphs: ", deltacon(r_ar, r_sc))
+print("DeltaCon score for nations graphs: ", deltacon(c_r_sc, c_r_ar))

@@ -10,7 +10,7 @@ import cartopy.crs as ccrs
 re_coord = re.compile(r'(?P<longitude>-?\d+\.\d+) (?P<latitude>-?\d+\.\d+)')
 url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
 ar_dir_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "data", "airline_routes_data" + os.sep)
-ss_dir_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "data", "sister_cities_data" + os.sep)
+sc_dir_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "data", "sister_cities_data" + os.sep)
 
 
 def coord(point):

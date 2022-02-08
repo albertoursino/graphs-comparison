@@ -6,20 +6,28 @@ import scipy.stats
 from python_files.Utility import sc_dir_path, ar_dir_path
 
 
+# We add two extra features for each node, i.e. the betweeness centrality and the closeness centrality
 def net_simile_get_features(graphs: [nx.Graph]):
     f = []
     for graph in graphs:
+        bet_centrality = nx.betweenness_centrality(graph)
+        clo_centrality = nx.betweenness_centrality(graph)
         size = graph.number_of_nodes()
-        features = np.empty((size, 7))
+        features = np.empty((size, 9))
         i = 0
         for node in graph.nodes:
             node_features = net_simile_get_node_features(graph, node)
-            features[i, :] = node_features
+            features[i, :] = node_features + (bet_centrality[node], clo_centrality[node])
             i = i + 1
         f.append(features)
     return f
 
 
+#  Standard features from the paper: for each node we collect, in THIS order:
+#  0) degree, 1) clustering coefficient, 2) average number of 2 hops neighbors,
+#  3) average clustering coefficient for the neighbors of the current node,
+#  4) number of edges in the ego network, 5) number of outgoing edges from the ego network,
+#  6) number of neighbors in the ego network
 def net_simile_get_node_features(graph, node):
     deg = graph.degree[node]
     c_coff = nx.clustering(graph, nodes=node)
@@ -49,9 +57,9 @@ def net_simile_aggregator(feature_matrices):
     number_graphs = len(feature_matrices)
     signatures = []
     for i in range(number_graphs):
-        f_matrix = feature_matrices[i]  # matrix graph_nodes x 7
+        f_matrix = feature_matrices[i]  # matrix graph_nodes x 8
         signature = []
-        for j in range(7):
+        for j in [0, 1, 2, 3, 4, 5, 6]:  # change this set to select different features
             feat_col = f_matrix[:, j]
             signature_col = (np.median(feat_col), np.mean(feat_col),
                              np.std(feat_col), scipy.stats.skew(feat_col), scipy.stats.kurtosis(feat_col))
@@ -103,6 +111,7 @@ try:
     # print("--> Betweenness centrality: ", btw_centrality)
     # print("--> Closeness centrality: ", cls_centrality)
     # print("--> Clustering centrality: ", clustering_co)
+
 
     sim = net_simile_compare([sis_countries, air_routes_countries], True)
     print(sim)

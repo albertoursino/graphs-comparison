@@ -78,9 +78,9 @@ def compare_clusters(dict1, dict2):
 
 
 s_cities = nx.readwrite.read_gexf(
-    sc_dir_path + 'reduced_sister_cities.gexf')
+    sc_dir_path + 'reduced_nations_sister_cities.gexf')
 routes = nx.readwrite.read_gexf(
-    ar_dir_path + 'reduced_routes.gexf')
+    ar_dir_path + 'reduced_nations_routes.gexf')
 
 #sc_GNcommunities = gn_clustering(s_cities)
 #ar_GNcommunities = gn_clustering(routes)
@@ -90,4 +90,7 @@ routes = nx.readwrite.read_gexf(
 
 sc_LOUVAINcommunities = louvain_clustering(s_cities)
 ar_LOUVAINcommunities = louvain_clustering(routes)
+print(sc_LOUVAINcommunities)
+print("---------------")
+print(ar_LOUVAINcommunities)
 print(compare_clusters(sc_LOUVAINcommunities, ar_LOUVAINcommunities))
